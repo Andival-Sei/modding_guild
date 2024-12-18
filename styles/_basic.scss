@@ -1,0 +1,53 @@
+/* _basic.scss */
+
+/* Сброс некоторых базовых элементов */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0; /* Убираем отступы */
+	padding: 0; /* Убираем внутренние отступы */
+	border: 0; /* Убираем границы */
+	font-size: 100%; /* Устанавливаем размер шрифта по умолчанию */
+	font: inherit; /* Наследуем шрифт */
+	vertical-align: baseline; /* Выравниваем по базовой линии */
+}
+
+/* Сброс отображения HTML5 элементов для старых браузеров */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block; /* Устанавливаем отображение как блок */
+}
+
+body {
+	line-height: 1; /* Устанавливаем межстрочный интервал */
+	font-family: 'Roboto', sans-serif; /* Устанавливаем основной шрифт */
+}
+
+ol, ul {
+	list-style: none; /* Убираем маркеры списка */
+}
+
+blockquote, q {
+	quotes: none; /* Убираем кавычки */
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: ''; /* Убираем содержимое кавычек */
+	content: none; /* Убираем содержимое кавычек */
+}
+
+table {
+	border-collapse: collapse; /* Убираем промежутки между ячейками */
+	border-spacing: 0; /* Устанавливаем расстояние между ячейками в 0 */
+}
