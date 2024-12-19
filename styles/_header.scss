@@ -5,8 +5,9 @@
 	color: v.$color_white;
 	height: 64px;
 	border-bottom: 1px solid v.$color_white;
+	letter-spacing: 0.04em;
 	&__wrapper {
-		
+		margin: 0 1rem 0 1rem;
 	}
 
 	&__nav {}
