@@ -1,0 +1,46 @@
+@use 'variables' as v;
+
+
+.header {
+	color: v.$color_white;
+	height: 64px;
+	border-bottom: 1px solid v.$color_white;
+	&__wrapper {
+		
+	}
+
+	&__nav {}
+
+	&__nav-list {
+		display: flex;
+		align-items: center;
+		gap: 50px; // Добавляем расстояние между элементами
+	}
+
+	&__nav-item {
+		row-gap: 50px;
+		font-weight: 600;
+	}
+
+	&__nav-item-link {
+		&:hover {
+			color: v.$color_lightBlue;
+		}
+	}
+	&__nav-list-right {
+		margin-left: auto;
+		display: flex;
+		align-items: center;
+		gap: 50px;
+	}
+}
+
+.nav {
+	display: flex;
+	&__logo {
+		width: 60px;
+		height: 60px;
+	}
+
+	&__item {}
+}

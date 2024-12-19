@@ -20,6 +20,7 @@ time, mark, audio, video {
 	font-size: 100%; /* Устанавливаем размер шрифта по умолчанию */
 	font: inherit; /* Наследуем шрифт */
 	vertical-align: baseline; /* Выравниваем по базовой линии */
+	box-sizing: border-box; /* Устанавливаем box-sizing */
 }
 
 /* Сброс отображения HTML5 элементов для старых браузеров */
@@ -31,6 +32,11 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1; /* Устанавливаем межстрочный интервал */
 	font-family: 'Roboto', sans-serif; /* Устанавливаем основной шрифт */
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
 }
 
 ol, ul {
@@ -50,4 +56,9 @@ q:before, q:after {
 table {
 	border-collapse: collapse; /* Убираем промежутки между ячейками */
 	border-spacing: 0; /* Устанавливаем расстояние между ячейками в 0 */
+}
+
+.container {
+	max-inline-size: 1240px;
+	margin: 0 auto; /* Центрируем контейнер */
 }
