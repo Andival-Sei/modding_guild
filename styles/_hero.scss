@@ -1,0 +1,112 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.hero {
+	
+	:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('image.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; /* Только фон будет прозрачным */
+  z-index: -1;
+}
+  &__wrapper {
+	
+  }
+
+  &__content {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.88px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    font-size: 44px;
+    text-wrap: balance;
+    max-width: 700px;
+    text-align: center;
+    background: linear-gradient(180deg, #fff, #ffffff4f);
+    background: linear-gradient(
+      180deg,
+      rgb(229, 221, 221) 0%,
+      rgb(234, 135, 50) 100%
+    );
+    background-clip: text;
+    color: transparent;
+    cursor: default;
+  }
+
+  &__description {
+    text-align: center;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: -0.4px;
+    max-width: 700px;
+    text-wrap: balance;
+    cursor: default;
+    margin-bottom: 25px;
+    padding: 0 20px;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+
+  &__button {
+	color: v.$color_white;
+    gap: 8px;
+    border-radius: 8px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    width: 7rem;
+    height: 2.5rem;
+    @include m.box_shadow(4);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    &:hover {
+      transform: translateY(-5px);
+      @include m.box_shadow(5);
+    }
+    &:hover:active {
+      transform: translateY(5px);
+      @include m.box_shadow(3);
+    }
+  }
+
+  &__button-start {
+    background: linear-gradient(
+      45deg,
+      rgba(212, 129, 53, 1) 27%,
+      rgba(230, 129, 94, 1) 69%,
+      rgba(237, 232, 228, 1) 100%
+    );
+    border: none;
+  }
+
+  &__button-youtube {
+	background-color: transparent;
+  }
+}
+
+.button {
+}

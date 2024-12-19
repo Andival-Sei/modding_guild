@@ -1,4 +1,4 @@
-/* _basic.scss */
+@use 'variables' as v;
 
 /* Сброс некоторых базовых элементов */
 html, body, div, span, applet, object, iframe,
@@ -33,6 +33,7 @@ body {
 	line-height: 1; /* Устанавливаем межстрочный интервал */
 	// font-family: 'Roboto', sans-serif; /* Устанавливаем основной шрифт */
 	font-family: "Manrope", serif; /* Устанавливаем основной шрифт */
+	color: v.$color_grey;
 }
 
 a {
