@@ -2,22 +2,20 @@
 @use "mixins" as m;
 
 .hero {
-	
-	:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('image.png');
-  background-size: cover;
-  background-position: center;
-  opacity: 0.5; /* Только фон будет прозрачным */
-  z-index: -1;
-}
+  :before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("image.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; /* Только фон будет прозрачным */
+    z-index: -1;
+  }
   &__wrapper {
-	
   }
 
   &__content {
@@ -72,7 +70,7 @@
   }
 
   &__button {
-	color: v.$color_white;
+    color: v.$color_white;
     gap: 8px;
     border-radius: 8px;
     font-family: "Inter", sans-serif;
@@ -104,7 +102,7 @@
   }
 
   &__button-youtube {
-	background-color: transparent;
+    background-color: transparent;
   }
 }
 
