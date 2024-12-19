@@ -1,0 +1,70 @@
+@use 'variables' as v;
+
+.header-guide {
+  color: v.$color_white;
+  height: 64px;
+  border-bottom: 1px solid v.$color_white;
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  background-color: v.$color_blue;
+  &__wrapper {
+    margin: 0 1rem;
+  }
+
+  &__nav {
+    width: 100%;
+  }
+
+  &__nav-list {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+
+  &__nav-item {
+    font-weight: 600;
+  }
+
+  &__nav-item-link {
+    &:hover {
+      color: v.$color_lightBlue;
+    }
+  }
+
+  &__nav-list-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+}
+
+.nav-guide {
+  display: flex;
+
+  &__logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  &__item {
+    /* Дополнительные стили при необходимости */
+  }
+}
+
+.layout {
+  display: flex;
+}
+
+.content {
+  /* Убедитесь, что контент занимает оставшуюся часть сетки */
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  margin-top: 64px; // Отступ для учета высоты header-guide
+  /* ...дополнительные стили... */
+}
+
