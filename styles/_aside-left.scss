@@ -1,8 +1,8 @@
-@use 'variables' as v;
+@use "variables" as v;
 
 .aside {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
   width: 25%; // Занимает 1/4 ширины контейнера
   height: 100vh;
   &__logo-block {
@@ -32,7 +32,7 @@
   flex-direction: column;
   width: 100%; // Занимает всю ширину колонки сетки
   height: 100%; // Занимает всю высоту сетки
-  
+
   /* Уберите фиксированное позиционирование, если оно было */
   position: static;
 

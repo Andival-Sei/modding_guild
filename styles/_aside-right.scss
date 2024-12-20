@@ -1,0 +1,5 @@
+@use 'variables' as v;
+
+.aside-right {
+	border-left: 1px solid v.$color_white;
+}
