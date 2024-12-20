@@ -1,8 +1,13 @@
-@use 'variables' as v;
+@use "variables" as v;
 
 .aside-right {
-	width: 100%; // Занимает 1/4 ширины контейнера
+  width: 100%; // Занимает 1/4 ширины контейнера
   height: 100%;
-	border-left: 1px solid v.$color_white;
-	background-color: v.$color_greyGuide;
+  
+  background-color: v.$color_greyGuide;
+
+  &__content {
+	justify-items: start;
+	margin-left: 25px;
+  }
 }
