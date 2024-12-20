@@ -1,28 +1,45 @@
-@use 'variables' as v;
+@use "variables" as v;
 
 .header-guide {
-  color: v.$color_white;
-  height: 64px;
-  height: 100%;
-//   border-bottom: 1px solid v.$color_white;
-  letter-spacing: 0.04em;
-  display: flex;
-  align-items: center;
-  background-color: v.$color_greyGuide;
-  
-  &__wrapper {
-    margin: 0 1rem;
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px; // Толщина линии
+    background-color: v.$color_fullBlack; // Цвет линии
+    position: absolute;
+    bottom: 0; // Линия снизу
+    left: 0;
+    position: absolute;
   }
 
-  &__nav {
+  &__container {
     width: 100%;
-	
+    max-width: calc((3 / 6.5) * 100%); // 3fr из общего 6.5fr
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  color: v.$color_white;
+
+  height: 100%;
+  //   border-bottom: 1px solid v.$color_white;
+  letter-spacing: 0.04em;
+
+  background-color: v.$color_greyGuide;
+
+  &__nav {
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
   }
 
   &__nav-list {
     display: flex;
     align-items: center;
-    gap: 50px;
   }
 
   &__nav-item {
@@ -30,6 +47,7 @@
   }
 
   &__nav-item-link {
+    transition: color 0.3s ease; // Добавляем плавный переход
     &:hover {
       color: v.$color_lightBlue;
     }
@@ -39,35 +57,7 @@
     margin-left: auto;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 50px;
   }
 }
-
-.nav-guide {
-  display: flex;
-
-  &__logo {
-    width: 60px;
-    height: 60px;
-  }
-
-  &__item {
-    /* Дополнительные стили при необходимости */
-  }
-}
-
-.layout {
-  display: flex;
-}
-
-.content {
-  /* Убедитесь, что контент занимает оставшуюся часть сетки */
-  display: flex;
-  flex-direction: column;
-}
-
-.main {
-  margin-top: 64px; // Отступ для учета высоты header-guide
-  /* ...дополнительные стили... */
-}
-
