@@ -22,14 +22,13 @@
     /* ...existing styles... */
   }
   &__navigation {
-	
     /* ...existing styles... */
   }
   &__navigation-list {
-	margin-top: 15px;
-	display: flex;
-	flex-direction: column;
-	gap: 15px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     /* ...existing styles... */
   }
   &__navigation-item {
@@ -51,26 +50,26 @@
 
   /* Добавьте дополнительные стили при необходимости */
   background-color: v.$color_black;
-	
+
   &__content {
     justify-items: end;
-	margin-right: 25px;
+    margin-right: 25px;
   }
-&__navigation {
-	 font-family: "Inter", serif;
-	 font-weight: 500;
-	&-title {
-		color: v.$color_white;
-	}
+  &__navigation {
+    font-family: "Inter", serif;
+    font-weight: 500;
+    &-title {
+      color: v.$color_white;
+      cursor: default;
+    }
 
-	&-link {
-		transition: color 0.3s ease; // Добавляем плавный переход
-		&:hover {
-			color: v.$color_lightBlue;
-		}
-	}
-}
-
+    &-link {
+      transition: color 0.3s ease; // Добавляем плавный переход
+      &:hover {
+        color: v.$color_lightBlue;
+      }
+    }
+  }
 }
 .nav {
   &__logo {

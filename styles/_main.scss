@@ -1,0 +1,12 @@
+@use "variables" as v;
+
+.main {
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ padding: 0;
+  background-color: v.$color_greyGuide;
+  &__container {
+	margin: 50px;
+  }
+}

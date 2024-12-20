@@ -4,11 +4,11 @@
   color: v.$color_white;
   height: 64px;
   height: 100%;
-  border-bottom: 1px solid v.$color_white;
+//   border-bottom: 1px solid v.$color_white;
   letter-spacing: 0.04em;
   display: flex;
   align-items: center;
-  background-color: v.$color_blue;
+  background-color: v.$color_greyGuide;
   
   &__wrapper {
     margin: 0 1rem;

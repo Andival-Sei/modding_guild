@@ -3,11 +3,37 @@
 .aside-right {
   width: 100%; // Занимает 1/4 ширины контейнера
   height: 100%;
-  
-  background-color: v.$color_greyGuide;
 
+  background-color: v.$color_greyGuide;
+  font-family: "Inter", serif;
+  font-size: 14px;
   &__content {
-	justify-items: start;
-	margin-left: 25px;
+    justify-items: start;
+    margin-left: 25px;
+  }
+  &__navigation {
+	position: relative;
+	&::before {
+	  content: "";
+	  display: block;
+	  width: 2px; // Толщина линии
+	  background-color: v.$color_lineGrey; // Цвет линии (используйте вашу переменную)
+	  height: 100%; // Высота линии
+	  position: absolute;
+	  left: 0; // Сдвиг линии влево
+	  top: 0;
+	  transform: translateX(-15px); // Дополнительный сдвиг влево
+	}
+    &-title {
+      color: v.$color_veryLightBrown;
+    }
+	&-link {
+	  transition: color 0.3s ease; // Добавляем плавный переход
+	  &:hover {
+		color: v.$color_darkWhite;
+	  }
+	}
+	
   }
 }
+//
