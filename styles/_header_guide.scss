@@ -2,6 +2,15 @@
 
 .header-guide {
   position: relative;
+  color: v.$color_white;
+
+  height: 100%;
+  //   border-bottom: 1px solid v.$color_white;
+  letter-spacing: 0.04em;
+
+  background-color: v.$color_greyGuide;
+
+  display: flex;
   &::after {
     content: "";
     display: block;
@@ -15,21 +24,12 @@
   }
 
   &__container {
-    width: 100%;
-    max-width: calc((3 / 6.5) * 100%); // 3fr из общего 6.5fr
-    margin: 0 auto;
+    width: calc((3 / 5) * 100%); // 3fr из общего 6.5fr
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
   }
-  color: v.$color_white;
-
-  height: 100%;
-  //   border-bottom: 1px solid v.$color_white;
-  letter-spacing: 0.04em;
-
-  background-color: v.$color_greyGuide;
-
+  
   &__nav {
     margin: 0 1rem;
     display: flex;
@@ -38,8 +38,6 @@
   }
 
   &__nav-list {
-    display: flex;
-    align-items: center;
   }
 
   &__nav-item {
@@ -54,7 +52,6 @@
   }
 
   &__nav-list-right {
-    margin-left: auto;
     display: flex;
     align-items: center;
     justify-content: center;
