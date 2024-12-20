@@ -1,20 +1,35 @@
 @use "variables" as v;
 
 .aside {
-  display: flex;
-  flex-direction: column;
-  width: 25%; // Занимает 1/4 ширины контейнера
-  height: 100vh;
   &__logo-block {
     /* ...existing styles... */
+    justify-items: start;
+    align-items: start;
+    width: 212px;
+    height: 64px;
+    // border-bottom: 1px solid v.$color_grey; // Нижняя граница
+    // padding-bottom: 20px;
+    &::after {
+      content: "";
+      display: block;
+      height: 2px; // Толщина линии
+      background-color: v.$color_lineGrey; // Цвет линии (используйте вашу переменную)
+      margin-top: 0.5px; // Отступ сверху от содержимого
+      width: 90%; // Ширина линии
+    }
   }
   &__logo-item {
     /* ...existing styles... */
   }
   &__navigation {
+	
     /* ...existing styles... */
   }
   &__navigation-list {
+	margin-top: 15px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
     /* ...existing styles... */
   }
   &__navigation-item {
@@ -28,8 +43,6 @@
   /* ...existing styles... */
 }
 .aside-left {
-  display: flex;
-  flex-direction: column;
   width: 100%; // Занимает всю ширину колонки сетки
   height: 100%; // Занимает всю высоту сетки
 
@@ -38,6 +51,26 @@
 
   /* Добавьте дополнительные стили при необходимости */
   background-color: v.$color_black;
+	
+  &__content {
+    justify-items: end;
+	margin-right: 25px;
+  }
+&__navigation {
+	 font-family: "Inter", serif;
+	 font-weight: 500;
+	&-title {
+		color: v.$color_white;
+	}
+
+	&-link {
+		transition: color 0.3s ease; // Добавляем плавный переход
+		&:hover {
+			color: v.$color_lightBlue;
+		}
+	}
+}
+
 }
 .nav {
   &__logo {

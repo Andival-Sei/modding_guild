@@ -1,7 +1,7 @@
 .grid-container {
   display: grid;
   grid-template-columns: 1.5fr 3fr 2fr; // aside-left занимает 240px, основной контент — оставшееся пространство
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 0.05fr 1fr;
   height: 100vh; // Устанавливаем высоту сетки на всю высоту окна
 }
 
@@ -21,5 +21,5 @@
 
 .aside-right {
 	grid-column: 3/4;
-	grid-row: 2/3;
+	grid-row: 2/4;
 }

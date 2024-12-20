@@ -1,5 +1,8 @@
 @use 'variables' as v;
 
 .aside-right {
+	width: 100%; // Занимает 1/4 ширины контейнера
+  height: 100%;
 	border-left: 1px solid v.$color_white;
+	background-color: v.$color_greyGuide;
 }
