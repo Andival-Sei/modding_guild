@@ -1,0 +1,43 @@
+@use "variables" as v;
+
+.introduction {
+  &__title-block {
+    text-align: center;
+	position: relative;
+	margin-bottom: 50px;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 40%;
+      height: 1px;
+      background-color: v.$color_grey;
+    }
+
+    &::before {
+      top: -10px;
+      left: 30%;
+    }
+
+    &::after {
+      bottom: -10px;
+      right: 30%;
+    }
+  }
+  &__title {
+    font-size: 3rem;
+    color: v.$color_veryLightBrown;
+	margin-bottom: 5px;
+    
+    
+  }
+  &__title-description {
+	font-style: italic;
+  }
+
+  &__text {
+	color: v.$color_veryLightBrown;
+	line-height: 1.65em;
+	margin: 11px 0;
+  }
+}

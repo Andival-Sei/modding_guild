@@ -1,16 +1,16 @@
 @use "variables" as v;
 
 .main {
- width: 100%;
- height: 100%;
- margin: 0;
- padding: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
   background-color: v.$color_greyGuide;
+  font-family: "Inter", serif;
   &__container {
-	margin: 50px;
+    margin: 50px;
   }
 }
 
 .container-guide {
-	
 }
