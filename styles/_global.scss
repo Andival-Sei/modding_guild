@@ -1,0 +1,9 @@
+@use "variables" as v;
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: v.$color_main;
+}

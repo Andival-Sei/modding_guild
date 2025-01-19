@@ -1,0 +1,23 @@
+{
+  "name": "modding_guild",
+  "version": "1.0.0",
+  "description": "Pet project for modding of skyrim",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:watch": "sass --watch styles:dist --no-source-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andival-Sei/modding_guild.git"
+  },
+  "author": "Andival-Sei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andival-Sei/modding_guild/issues"
+  },
+  "homepage": "https://github.com/Andival-Sei/modding_guild#readme",
+  "dependencies": {
+    "sass": "^1.83.4"
+  }
+}
