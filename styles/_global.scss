@@ -1,9 +1,26 @@
 @use "variables" as v;
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-	background-color: v.$color_main;
+  background-color: v.$color_main;
+  font-family: "Inter", sans-serif;
+  color: white;
 }
