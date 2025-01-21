@@ -1,9 +1,6 @@
 @use "variables" as v;
 @use "mixins" as m;
 
-.main {
-}
-
 .container {
   max-inline-size: 1100px;
   margin: 0 auto;
@@ -12,6 +9,7 @@
 .hero {
   text-align: center;
   margin-block-start: 300px;
+	height: 3000px;
 
   &__title {
     font-family: "Manrope", sans-serif;
@@ -26,6 +24,7 @@
     background-clip: text;
     color: transparent;
     cursor: default;
+    padding: 0 30px;
   }
 
   &__description {
@@ -38,12 +37,14 @@
     cursor: default;
     margin: 0 auto 60px;
     color: v.$color_description;
+    padding: 0 30px;
   }
 
   &__actions {
     display: flex;
     justify-content: center;
     gap: 100px;
+    padding: 0 30px;
   }
 }
 
@@ -75,5 +76,25 @@
 
   &--youtube {
     background: v.$gradient-button-youtube;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Стили для планшетов и больших мобильных телефонов */
+  .hero {
+    margin-block-start: 200px;
+
+    &__title {
+      font-size: 36px;
+      max-inline-size: 500px;
+    }
+
+    &__description {
+      font-size: 18px;
+    }
+
+    &__actions {
+      gap: 50px;
+    }
   }
 }

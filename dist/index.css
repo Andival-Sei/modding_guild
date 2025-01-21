@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   padding: 0;
@@ -18,18 +19,20 @@ li {
 }
 
 body {
-  background-color: #161618;
+  background-color: #1b1b1f;
   font-family: "Inter", sans-serif;
   color: white;
 }
 
 .header {
-  background-color: #333;
+  background-color: rgba(27, 27, 31, 0.5);
   position: fixed;
   inline-size: 100%;
   inset-block-start: 0;
   inset-inline-start: 0;
   inset-inline-end: 0;
+  backdrop-filter: blur(10px);
+  border-block-end: 3px solid #161618;
 }
 .header__container {
   margin: 0 auto;
@@ -55,7 +58,7 @@ body {
 .header__burger {
   display: none;
 }
-@media (max-inline-size: 768px) {
+@media (max-width: 768px) {
   .header__burger {
     border: none;
     outline: none;
@@ -110,7 +113,7 @@ body {
     max-block-size: 200px;
     padding: 10px;
     inline-size: auto;
-    block-size: auto;
+    block-size: 200%;
   }
   .header__menu-list {
     flex-direction: column;
@@ -120,6 +123,7 @@ body {
     margin: 0;
     inline-size: 100%;
     block-size: 100%;
+    gap: 20px;
   }
   .header__menu-link {
     margin: 0;
@@ -141,6 +145,7 @@ body {
 .hero {
   text-align: center;
   margin-block-start: 300px;
+  height: 3000px;
 }
 .hero__title {
   font-family: "Manrope", sans-serif;
@@ -155,6 +160,7 @@ body {
   background-clip: text;
   color: transparent;
   cursor: default;
+  padding: 0 30px;
 }
 .hero__description {
   font-size: 20px;
@@ -166,11 +172,13 @@ body {
   cursor: default;
   margin: 0 auto 60px;
   color: #a9a9a9;
+  padding: 0 30px;
 }
 .hero__actions {
   display: flex;
   justify-content: center;
   gap: 100px;
+  padding: 0 30px;
 }
 
 .button {
@@ -198,4 +206,21 @@ body {
 }
 .button--youtube {
   background: linear-gradient(-45deg, rgb(204, 62, 58) 27%, rgb(221, 31, 31) 69%, rgb(49, 48, 47) 100%);
+}
+
+@media (max-width: 768px) {
+  /* Стили для планшетов и больших мобильных телефонов */
+  .hero {
+    margin-block-start: 200px;
+  }
+  .hero__title {
+    font-size: 36px;
+    max-inline-size: 500px;
+  }
+  .hero__description {
+    font-size: 18px;
+  }
+  .hero__actions {
+    gap: 50px;
+  }
 }
