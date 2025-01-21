@@ -30,6 +30,7 @@
     &-link {
       margin-inline-end: 50px;
       transition: color 0.3s ease;
+
       &:hover {
         color: v.$color_hoverHeader;
       }
@@ -46,66 +47,85 @@
       outline: none;
       position: relative;
       display: block;
-      margin-right: 30px;
-      width: 30px;
-      height: 25px;
+      margin-inline-end: 30px;
+      inline-size: 30px;
+      block-size: 25px;
       background: none;
-			z-index: 2;
+      z-index: 2;
 
       &::before,
       &::after,
       &-middle-line {
         position: absolute;
-        width: 100%;
-        height: 3px;
+        inline-size: 100%;
+        block-size: 3px;
         background-color: white;
         transition: 0.3s;
       }
 
       &::before {
         content: "";
-        top: 0;
+        inset-block-start: 0;
       }
+
       &.active::before {
         rotate: 45deg;
-        top: 12px;
+        inset-block-start: 12px;
       }
+
       &::after {
         content: "";
-        bottom: 0;
+        inset-block-end: 0;
       }
+
       &.active::after {
         rotate: -45deg;
-        bottom: 10px;
+        inset-block-end: 10px;
       }
 
       &-middle-line {
-        top: 11px;
+        inset-block-start: 11px;
       }
+
       &.active &-middle-line {
-        width: 0;
+        inline-size: 0;
       }
     }
 
     &__menu {
-      display: none;
       position: fixed;
-      left: -100vw;
-      right: 100vw;
-
-      padding-top: 300px;
+      inset: 10vh 10vw 0 auto;
+      opacity: 0;
+      transform: translateX(100%);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      background-color: rgb(61, 50, 50);
       z-index: -1;
+      color: white;
+      max-inline-size: 200px;
+      max-block-size: 200px;
+      padding: 10px;
+      inline-size: auto;
+      block-size: auto;
 
       &-list {
-        background-color: #151515;
         flex-direction: column;
         text-align: center;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0;
+        inline-size: 100%;
+        block-size: 100%;
+      }
+
+      &-link {
+        margin: 0;
+        font-size: 18px;
       }
 
       &.active {
-        display: block;
-        left: 0;
-        right: 0;
+        opacity: 1;
+        transform: translateX(0);
+        border-radius: 5%;
         z-index: 1;
       }
     }
