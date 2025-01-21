@@ -1,0 +1,79 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.main {
+}
+
+.container {
+  max-inline-size: 1100px;
+  margin: 0 auto;
+}
+
+.hero {
+  text-align: center;
+  margin-block-start: 300px;
+
+  &__title {
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.88px;
+    font-size: 44px;
+    text-wrap: wrap;
+    max-inline-size: 700px;
+    margin: 0 auto 20px;
+    background: v.$gradient_main_title;
+    background-clip: text;
+    color: transparent;
+    cursor: default;
+  }
+
+  &__description {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    max-inline-size: 700px;
+    text-wrap: balance;
+    cursor: default;
+    margin: 0 auto 60px;
+    color: v.$color_description;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+  }
+}
+
+.button {
+  background-color: v.$color_description;
+  inline-size: 8rem;
+  block-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  border-radius: 8px;
+  @include m.box_shadow(4);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    @include m.box_shadow(5);
+  }
+
+  &:hover:active {
+    transform: translateY(5px);
+    @include m.box_shadow(3);
+  }
+
+  &--start {
+    background: v.$gradient-button-start;
+  }
+
+  &--youtube {
+    background: v.$gradient-button-youtube;
+  }
+}

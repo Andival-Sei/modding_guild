@@ -2,9 +2,11 @@
 
 .header {
   background-color: #333; // Замените на нужный цвет
-  border: 1px solid white;
   position: fixed;
   inline-size: 100%;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  inset-inline-end: 0;
 
   &__container {
     margin: 0 auto;
@@ -16,9 +18,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-
-  &__title {
   }
 
   &__menu {
@@ -41,7 +40,7 @@
     display: none;
   }
 
-  @media (max-width: 768px) {
+  @media (max-inline-size: 768px) {
     &__burger {
       border: none;
       outline: none;
@@ -61,6 +60,7 @@
         block-size: 3px;
         background-color: white;
         transition: 0.3s;
+        border-radius: 5px;
       }
 
       &::before {
