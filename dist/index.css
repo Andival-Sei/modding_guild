@@ -8,6 +8,7 @@
 a {
   color: inherit;
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 ul,
@@ -106,14 +107,13 @@ body {
     opacity: 0;
     transform: translateX(100%);
     transition: opacity 0.3s ease, transform 0.3s ease;
-    background-color: rgb(61, 50, 50);
+    background-color: #2b2a2a;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4), 0 3px 6px rgba(0, 0, 0, 0.5);
     z-index: -1;
     color: white;
     max-inline-size: 200px;
-    max-block-size: 200px;
     padding: 10px;
-    inline-size: auto;
-    block-size: 200%;
+    min-block-size: 20vh;
   }
   .header__menu-list {
     flex-direction: column;
@@ -145,7 +145,6 @@ body {
 .hero {
   text-align: center;
   margin-block-start: 300px;
-  height: 3000px;
 }
 .hero__title {
   font-family: "Manrope", sans-serif;
@@ -190,16 +189,16 @@ body {
   justify-content: center;
   padding: 10px 18px;
   border-radius: 8px;
-  box-shadow: 0 14px 28px rgba(255, 255, 255, 0.1), 0 10px 10px rgba(255, 255, 255, 0.15);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.6), 0 10px 10px rgba(0, 0, 0, 0.7);
   transition: box-shadow 0.3s ease, transform 0.2s ease;
 }
 .button:hover {
   transform: translateY(-5px);
-  box-shadow: 0 19px 38px rgba(255, 255, 255, 0.15), 0 15px 12px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.7), 0 15px 12px rgba(0, 0, 0, 0.8);
 }
 .button:hover:active {
   transform: translateY(5px);
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.5), 0 6px 6px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 6px 6px rgba(0, 0, 0, 0.6);
 }
 .button--start {
   background: linear-gradient(45deg, rgb(201, 125, 55) 27%, rgb(221, 79, 31) 69%, rgb(49, 48, 47) 100%);

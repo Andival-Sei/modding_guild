@@ -1,4 +1,5 @@
 @use "variables" as v;
+@use "mixins" as m;
 
 .header {
   background-color: v.$color_header; // Замените на нужный цвет
@@ -100,14 +101,13 @@
       opacity: 0;
       transform: translateX(100%);
       transition: opacity 0.3s ease, transform 0.3s ease;
-      background-color: rgb(61, 50, 50);
+      background-color: #2b2a2a;
+			@include m.box_shadow(2);
       z-index: -1;
       color: white;
       max-inline-size: 200px;
-      max-block-size: 200px;
       padding: 10px;
-      inline-size: auto;
-      block-size: 200%;
+			min-block-size: 20vh;
 
       &-list {
         flex-direction: column;
