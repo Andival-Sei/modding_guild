@@ -34,7 +34,7 @@
   &__menu-item {
     color: v.$color_aside_text;
     padding: 2px 6px;
-    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
     position: relative;
 
     &:hover {
@@ -46,19 +46,20 @@
     }
 
     &.active {
-      &::before {
-        content: "";
-        position: absolute;
-        inset-block-start: 0;
-        inset-inline-start: 0;
-        border: 3px solid v.$color_hoverHeader;
-        border-start-end-radius: 5px;
-        border-end-end-radius: 5px;
-        block-size: 1em;
-        opacity: 1;
-        margin-inline-start: -20px;
-      }
+      color: v.$color_text;
     }
+  }
+
+  &__indicator {
+    position: absolute;
+    left: -20px; // Позиция индикатора относительно меню
+    width: 3px;
+    height: 20px;
+    background-color: v.$color_hoverHeader;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    transition: top 0.3s ease; // Плавный переход позиции
+    top: 0; // Начальная позиция
   }
 }
 
@@ -72,6 +73,11 @@
 
 .guide {
   padding: 0 50px;
+
+  &__section {
+    scroll-margin-top: 80px;
+  }
+
   &__block-title {
     margin-block-start: 100px;
     text-align: center;

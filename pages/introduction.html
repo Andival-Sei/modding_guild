@@ -43,7 +43,7 @@
       </header>
       <aside class="aside-links">aside</aside>
       <main class="main main--guide guide">
-        <section class="guide__section">
+        <section class="guide__section" id="section1">
           <div class="container">
             <div class="guide__block-title">
               <h2 class="guide__title">Знакомство</h2>
@@ -108,7 +108,7 @@
           </div>
         </section>
 
-        <section class="guide__section">
+        <section class="guide__section" id="section2">
           <div class="container">
             <div class="guide__block-title">
               <h2 class="guide__title">Путеводитель в двух словах</h2>
@@ -201,7 +201,7 @@
           </div>
         </section>
 
-        <section class="guide__section">
+        <section class="guide__section" id="section3">
           <div class="guide__block-title">
             <h2 class="guide__title">The Elder Scrolls V : Skyrim</h2>
             <p class="guide__description">
@@ -386,17 +386,28 @@
         </section>
       </main>
       <aside class="aside-navigation">
-				<aside class="aside-navigation__container">
-					<nav class="aside-navigation__menu">
-						<ul class="aside-navigation__menu-list">
-							<li class="aside-navigation__menu-item aside-navigation__menu-item--description">На этой странице</li>
-							<li class="aside-navigation__menu-item">Знакомство</li>
-							<li class="aside-navigation__menu-item">Путеводитель в двух словах</li>
-							<li class="aside-navigation__menu-item">The Elder Scrolls V : Skyrim</li>
-						</ul>
-					</nav>
-				</aside>
-			</aside>
+        <aside class="aside-navigation__container">
+          <nav class="aside-navigation__menu">
+            <ul class="aside-navigation__menu-list">
+              <li
+                class="aside-navigation__menu-item aside-navigation__menu-item--description"
+              >
+                На этой странице
+              </li>
+              <li class="aside-navigation__menu-item" data-section="section1">
+                <a href="#section1">Знакомство</a>
+              </li>
+              <li class="aside-navigation__menu-item" data-section="section2">
+                <a href="#section2">Путеводитель в двух словах</a>
+              </li>
+              <li class="aside-navigation__menu-item" data-section="section3">
+                <a href="#section3">The Elder Scrolls V : Skyrim</a>
+              </li>
+              <div class="aside-navigation__indicator"></div>
+            </ul>
+          </nav>
+        </aside>
+      </aside>
     </div>
   </body>
 </html>
