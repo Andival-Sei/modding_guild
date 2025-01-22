@@ -12,6 +12,7 @@
   border-block-end: 3px solid v.$color_aside;
   // overflow-x: hidden;
   z-index: 10;
+  min-inline-size: 0;
 
   &--main-page {
     grid-area: none;

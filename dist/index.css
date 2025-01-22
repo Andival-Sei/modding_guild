@@ -84,6 +84,7 @@ body {
   backdrop-filter: blur(10px);
   border-block-end: 3px solid #161618;
   z-index: 10;
+  min-inline-size: 0;
 }
 .header--main-page {
   grid-area: none;
@@ -282,24 +283,24 @@ body {
 }
 .aside-links {
   background-color: #161618;
-  block-size: 100vh;
-  inline-size: 100%;
 }
 
 .aside-navigation {
   background-color: #161618;
-  block-size: 100vh;
-  inline-size: 100%;
 }
 
 .main {
-  padding: 0 50px;
+  min-inline-size: 0;
 }
 .main--guide {
-  margin-block-start: 150px;
+  padding-block-end: 100px;
 }
 
+.guide {
+  padding: 0 50px;
+}
 .guide__block-title {
+  margin-block-start: 100px;
   text-align: center;
   position: relative;
   z-index: 1;
@@ -324,6 +325,11 @@ body {
   font-size: 3rem;
   font-weight: 600;
 }
+@media (max-width: 480px) {
+  .guide__title {
+    font-size: 2rem;
+  }
+}
 .guide__description {
   color: #a9a9a9;
 }
@@ -336,6 +342,54 @@ body {
 .guide__text {
   line-height: 1.65em;
   color: #dfdfd6;
+}
+.guide__text-link {
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+.guide__text-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.guide__text-list-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-inline-start: 20px;
+}
+
+.text-highlight {
+  color: #9499ff;
+}
+
+.message-block {
+  position: relative;
+  margin: 30px 0;
+  padding: 40px 35px 35px 35px;
+  border-radius: 10px;
+  line-height: 24px;
+}
+.message-block__title {
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 0;
+  margin: 5px 5px;
+  display: inline-block;
+  font-size: 1.17em;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.message-block--notice {
+  border: 1px solid #636cff;
+  background-color: #212131;
+  color: #bcc0ea;
+}
+.message-block--warning {
+  border: 1px solid #f9b440;
+  background-color: #3c3422;
+  color: #f9b440;
 }
 
 @media (max-width: 1280px) {
