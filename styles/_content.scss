@@ -1,0 +1,81 @@
+@use "variables" as v;
+
+.aside-links {
+  background-color: v.$color_aside;
+  block-size: 100vh;
+	inline-size: 100%;
+}
+
+.aside-navigation {
+	background-color: v.$color_aside;
+	block-size: 100vh;
+	inline-size: 100%;
+}
+
+.main {
+  &--guide {
+    margin-block-start: 150px;
+  }
+
+  padding: 0 50px;
+}
+
+.guide {
+  &__block-title {
+    text-align: center;
+    position: relative;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      inline-size: 40%;
+      block-size: 2px;
+      background-color: v.$color_description;
+      border-radius: 5px;
+    }
+    &::before {
+      inset: -10px auto auto 30%;
+    }
+
+    &::after {
+      inset: auto auto -10px 30%;
+    }
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  &__description {
+    color: v.$color_description;
+  }
+
+  &__block-text {
+    margin-block-start: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__text {
+    line-height: 1.65em;
+    color: v.$color_text;
+  }
+}
+
+@media (max-width: 1280px) {
+  .aside-navigation {
+    opacity: 0;
+    transform: translateX(100%);
+		position: fixed;
+  }
+}
+
+@media (max-width: 1020px) {
+	.aside-links {
+    opacity: 0;
+    transform: translateX(-100%);
+		position: fixed;
+  }
+}

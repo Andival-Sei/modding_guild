@@ -3,17 +3,25 @@
 
 .header {
   background-color: v.$color_header; // Замените на нужный цвет
-  position: fixed;
+  position: sticky;
   inline-size: 100%;
   inset-block-start: 0;
   inset-inline-start: 0;
   inset-inline-end: 0;
-	backdrop-filter: blur(10px);
-	border-block-end: 3px solid v.$color_aside;
+  backdrop-filter: blur(10px);
+  border-block-end: 3px solid v.$color_aside;
+  // overflow-x: hidden;
+
+  &--main-page {
+    grid-area: none;
+  }
 
   &__container {
-    margin: 0 auto;
     max-inline-size: 1100px;
+
+    &--main-page {
+      margin: 0 auto;
+    }
   }
 
   &__wrapper {
@@ -96,18 +104,22 @@
     }
 
     &__menu {
-      position: fixed;
-      inset: 10vh 10vw 0 auto;
+      position: absolute;
+      // inset: 10vh 10vw 0 auto;
+      top: 10vh;
+      right: 0;
       opacity: 0;
       transform: translateX(100%);
       transition: opacity 0.3s ease, transform 0.3s ease;
       background-color: #2b2a2a;
-			@include m.box_shadow(2);
-      z-index: -1;
+      @include m.box_shadow(2);
+      // z-index: 1;
       color: white;
-      max-inline-size: 200px;
+      max-inline-size: 250px;
       padding: 10px;
-			min-block-size: 20vh;
+      min-block-size: 20vh;
+      border-radius: 5%;
+      display: none;
 
       &-list {
         flex-direction: column;
@@ -117,7 +129,7 @@
         margin: 0;
         inline-size: 100%;
         block-size: 100%;
-				gap: 20px;
+        gap: 20px;
       }
 
       &-link {
@@ -126,10 +138,11 @@
       }
 
       &.active {
+        display: block;
+        position: fixed;
         opacity: 1;
         transform: translateX(0);
-        border-radius: 5%;
-        z-index: 1;
+        // z-index: 1;
       }
     }
   }

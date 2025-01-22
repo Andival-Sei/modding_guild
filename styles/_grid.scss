@@ -1,0 +1,64 @@
+.grid-container {
+  inline-size: 100%;
+  block-size: 100%;
+  display: grid;
+  grid-template-columns: 2fr 4fr minmax(50px, 2fr);
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "aside-links header header"
+    "aside-links main aside-navigation";
+}
+
+.aside-links {
+  grid-area: aside-links;
+}
+
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+}
+
+.aside-navigation {
+  grid-area: aside-navigation;
+  // width: clamp(30px, 3vw, 20vw);
+  // width: 40%;
+}
+
+@media (max-width: 1280px) {
+  .grid-container {
+    grid-template-columns: 2fr 6fr;
+    grid-template-areas:
+      "aside-links header"
+      "aside-links main";
+  }
+}
+
+@media (max-width: 1020px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "main";
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; // Одна колонка на маленьких экранах
+    grid-template-rows: auto auto 1fr auto auto;
+    grid-template-areas:
+      "header"
+      "aside-links"
+      "main"
+      "aside-navigation"
+      "footer";
+  }
+
+  .aside-links,
+  .aside-navigation {
+    height: auto; // Высота автоматически подстраивается
+  }
+}
