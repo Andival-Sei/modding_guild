@@ -83,6 +83,7 @@ body {
   inset-inline-end: 0;
   backdrop-filter: blur(10px);
   border-block-end: 3px solid #161618;
+  z-index: 10;
 }
 .header--main-page {
   grid-area: none;
@@ -158,18 +159,18 @@ body {
   .header__menu {
     position: absolute;
     top: 10vh;
-    right: 0;
+    right: 5vh;
     opacity: 0;
-    transform: translateX(100%);
+    transform: translateX(-100%);
     transition: opacity 0.3s ease, transform 0.3s ease;
     background-color: #2b2a2a;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4), 0 3px 6px rgba(0, 0, 0, 0.5);
+    z-index: 12;
     color: white;
     max-inline-size: 250px;
     padding: 10px;
     min-block-size: 20vh;
     border-radius: 5%;
-    display: none;
   }
   .header__menu-list {
     flex-direction: column;
@@ -196,7 +197,6 @@ body {
 .container {
   max-inline-size: 1100px;
   margin: 0 auto;
-  height: 3000px;
 }
 
 .hero {
@@ -302,6 +302,7 @@ body {
 .guide__block-title {
   text-align: center;
   position: relative;
+  z-index: 1;
 }
 .guide__block-title::before, .guide__block-title::after {
   content: "";
@@ -310,6 +311,7 @@ body {
   block-size: 2px;
   background-color: #a9a9a9;
   border-radius: 5px;
+  z-index: 1;
 }
 .guide__block-title::before {
   inset: -10px auto auto 30%;
@@ -318,6 +320,7 @@ body {
   inset: auto auto -10px 30%;
 }
 .guide__title {
+  position: relative;
   font-size: 3rem;
   font-weight: 600;
 }
@@ -340,6 +343,7 @@ body {
     opacity: 0;
     transform: translateX(100%);
     position: fixed;
+    display: none;
   }
 }
 @media (max-width: 1020px) {
@@ -347,5 +351,6 @@ body {
     opacity: 0;
     transform: translateX(-100%);
     position: fixed;
+    display: none;
   }
 }
