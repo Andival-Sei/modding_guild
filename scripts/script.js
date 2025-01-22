@@ -21,14 +21,14 @@ burger.addEventListener('click', () => {
     }
   };
 
-  // Обработчик клика по пунктам меню для ручного переключения
-  menuItems.forEach(item => {
-    item.addEventListener('click', () => {
-      menuItems.forEach(el => el.classList.remove('active'));
-      item.classList.add('active');
-      updateIndicatorPosition(item);
-    });
-  });
+  // // Обработчик клика по пунктам меню для ручного переключения
+  // menuItems.forEach(item => {
+  //   item.addEventListener('click', () => {
+  //     menuItems.forEach(el => el.classList.remove('active'));
+  //     item.classList.add('active');
+  //     updateIndicatorPosition(item);
+  //   });
+  // });
 
   // Инициализация позиции индикатора при загрузке страницы
   const initialActive = document.querySelector('.aside-navigation__menu-item.active');
@@ -66,11 +66,5 @@ burger.addEventListener('click', () => {
     });
   }
 
-  // Обработчик клика на бургер для открытия/закрытия меню
-  if (burger && headerMenu) {
-    burger.addEventListener('click', () => {
-      burger.classList.toggle("active");
-      headerMenu.classList.toggle("active");
-    });
-  }
+
 });
