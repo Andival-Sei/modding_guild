@@ -7,9 +7,59 @@
 }
 
 .aside-navigation {
-  background-color: v.$color_aside;
-  // block-size: 100vh;
-  // inline-size: 100%;
+  &__container {
+    position: relative;
+    block-size: 100%;
+  }
+  &__menu {
+    position: fixed;
+    margin-block-start: 50px;
+  }
+  &__menu-list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    &::before {
+      content: "";
+      position: absolute;
+      inset-block-start: 0;
+      inset-inline-start: 0;
+      border: 1px solid v.$color_aside_border;
+      block-size: 100%;
+      opacity: 1;
+      margin-inline-start: -20px;
+    }
+  }
+  &__menu-item {
+    color: v.$color_aside_text;
+    padding: 2px 6px;
+    transition: background-color 0.3s ease;
+    position: relative;
+
+    &:hover {
+      color: v.$color_text;
+    }
+
+    &--description {
+      color: v.$color_text;
+    }
+
+    &.active {
+      &::before {
+        content: "";
+        position: absolute;
+        inset-block-start: 0;
+        inset-inline-start: 0;
+        border: 3px solid v.$color_hoverHeader;
+        border-start-end-radius: 5px;
+        border-end-end-radius: 5px;
+        block-size: 1em;
+        opacity: 1;
+        margin-inline-start: -20px;
+      }
+    }
+  }
 }
 
 .main {
@@ -50,7 +100,7 @@
     position: relative;
     font-size: 3rem;
     font-weight: 600;
-		
+
     @media (max-width: 480px) {
       font-size: 2rem;
     }
@@ -92,8 +142,8 @@
 }
 
 .text-highlight {
-      color: v.$color_text_highlight;
-    }
+  color: v.$color_text_highlight;
+}
 
 .message-block {
   position: relative;
