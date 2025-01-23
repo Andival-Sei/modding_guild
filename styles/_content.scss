@@ -133,6 +133,11 @@
       flex-direction: column;
       gap: 10px;
 
+      &--numbered {
+        
+				
+      }
+
       &-item {
         display: flex;
         flex-direction: column;
@@ -142,12 +147,12 @@
     }
   }
 
-	&__navigation-buttons {
+  &__navigation-buttons {
     margin-block-start: 100px;
     display: flex;
     justify-content: space-around;
     position: relative;
-		gap: 20px;
+    gap: 20px;
     &::before {
       content: "";
       position: absolute;
@@ -157,7 +162,6 @@
       background-color: v.$color_description;
     }
   }
-
 }
 
 .text-highlight {
@@ -205,9 +209,9 @@
   border-collapse: collapse; // Схлопывание границ, опционально
   &__th,
   &__td {
-		padding: 12px;
+    padding: 12px;
     text-align: center;
-		inline-size: 50%;
+    inline-size: 50%;
   }
 }
 
@@ -219,50 +223,50 @@
 }
 
 .table-system-specs {
-	&__th, &__td {
-		padding: 12px;
-	}
+  &__th,
+  &__td {
+    padding: 12px;
+  }
 }
 
 .navigation-button {
-	background-color: v.$color_navigation-button;
-    border: 1px solid v.$color_aside_border;
-    border-radius: 8px;
-    inline-size: 300px;
-    min-block-size: 70px;
-    padding: 10px;
-    display: flex;
-		gap: 10px;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+  background-color: v.$color_navigation-button;
+  border: 1px solid v.$color_aside_border;
+  border-radius: 8px;
+  inline-size: 300px;
+  min-block-size: 70px;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 
+  &:hover {
+    background-color: v.$color_navigation-button_hover;
+  }
+  &:hover:active {
+    background-color: v.$color_navigation-button_hover_active;
+    transform: scale(0.95);
+  }
 
-    &:hover {
-      background-color: v.$color_navigation-button_hover;
-    }
-    &:hover:active {
-      background-color: v.$color_navigation-button_hover_active;
-      transform: scale(0.95);
-    }
-
-    &__description {
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 20px;
-    }
-    &__title {
-      line-height: 20px;
-      font-size: 16px;
-      font-weight: 500;
-      color: v.$color_text_highlight;
-    }
-    &--next {
-      text-align: end;
-    }
-    &--previous {
-      text-align: start;
-    }
+  &__description {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  &__title {
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: v.$color_text_highlight;
+  }
+  &--next {
+    text-align: end;
+  }
+  &--previous {
+    text-align: start;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -284,7 +288,7 @@
 }
 
 @media (max-width: 768px) {
-	.navigation-button {
-		inline-size: 200px;
-	}
+  .navigation-button {
+    inline-size: 200px;
+  }
 }
