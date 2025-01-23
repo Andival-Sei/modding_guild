@@ -340,12 +340,9 @@ body {
 .main {
   min-inline-size: 0;
 }
-.main--guide {
-  padding-block-end: 100px;
-}
 
 .guide {
-  padding: 0 50px;
+  padding: 0 50px 100px;
 }
 .guide__section {
   scroll-margin-top: 80px;
@@ -409,6 +406,21 @@ body {
   gap: 10px;
   margin-inline-start: 20px;
 }
+.guide__navigation-buttons {
+  margin-block-start: 100px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  gap: 20px;
+}
+.guide__navigation-buttons::before {
+  content: "";
+  position: absolute;
+  inset: -30px 0 0 0;
+  inline-size: 100%;
+  block-size: 2px;
+  background-color: #a9a9a9;
+}
 
 .text-highlight {
   color: #9499ff;
@@ -443,6 +455,67 @@ body {
   color: #f9b440;
 }
 
+.table-unstyled {
+  inline-size: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+.table-unstyled__th, .table-unstyled__td {
+  padding: 12px;
+  text-align: center;
+  inline-size: 50%;
+}
+
+.table-system-specs__td:nth-child(1) {
+  text-align: start;
+}
+
+.table-system-specs__td:nth-child(2) {
+  text-align: end;
+}
+
+.table-system-specs__th, .table-system-specs__td {
+  padding: 12px;
+}
+
+.navigation-button {
+  background-color: #2f3035;
+  border: 1px solid #2e2e32;
+  border-radius: 8px;
+  inline-size: 300px;
+  min-block-size: 70px;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.navigation-button:hover {
+  background-color: #353536;
+}
+.navigation-button:hover:active {
+  background-color: #474747;
+  transform: scale(0.95);
+}
+.navigation-button__description {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+}
+.navigation-button__title {
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #9499ff;
+}
+.navigation-button--next {
+  text-align: end;
+}
+.navigation-button--previous {
+  text-align: start;
+}
+
 @media (max-width: 1280px) {
   .aside-navigation {
     opacity: 0;
@@ -457,5 +530,10 @@ body {
     transform: translateX(-100%);
     position: fixed;
     display: none;
+  }
+}
+@media (max-width: 768px) {
+  .navigation-button {
+    inline-size: 200px;
   }
 }
