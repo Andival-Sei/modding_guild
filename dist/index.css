@@ -12,14 +12,13 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
-ul,
-li {
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-ol {
+ol, li {
   padding: 0;
   margin: 0;
 }
@@ -87,7 +86,7 @@ body {
   inset-inline-start: 0;
   inset-inline-end: 0;
   backdrop-filter: blur(10px);
-  border-block-end: 3px solid #161618;
+  border-block-end: 3px solid #0f0f10;
   z-index: 10;
   min-inline-size: 0;
 }
@@ -287,7 +286,7 @@ body {
   }
 }
 .aside-links {
-  background-color: #161618;
+  background-color: #0f0f10;
 }
 
 .aside-navigation__container {
@@ -403,9 +402,13 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin: 0 10px 10px 10px;
+}
+.guide__text-list--numbered {
+  list-style-type: decimal;
 }
 .guide__text-list-item {
-  display: flex;
+  margin-block-start: 10px;
   flex-direction: column;
   gap: 10px;
   margin-inline-start: 20px;
@@ -482,6 +485,19 @@ body {
   padding: 12px;
 }
 
+.table {
+  border-collapse: separate;
+  border-spacing: 10px 20px;
+}
+.table__td:nth-child(1) {
+  text-align: start;
+  padding-right: 10px;
+}
+.table__td:nth-child(2) {
+  text-align: end;
+  padding-left: 10px;
+}
+
 .navigation-button {
   background-color: #2f3035;
   border: 1px solid #2e2e32;
@@ -518,6 +534,25 @@ body {
 }
 .navigation-button--previous {
   text-align: start;
+}
+
+.tag {
+  display: inline-block;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+.tag--cao {
+  background-color: #2f8a16;
+}
+.tag--classic {
+  background-color: #195c14;
+}
+.tag--creation-kit-resave {
+  background-color: #d21913;
+}
+.tag--esl {
+  background-color: #0808ef;
 }
 
 @media (max-width: 1280px) {

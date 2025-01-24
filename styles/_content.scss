@@ -132,17 +132,21 @@
       display: flex;
       flex-direction: column;
       gap: 10px;
+			margin: 0 10px 10px 10px;
+			
 
-      &--numbered {
-        
-				
-      }
-
+			&--numbered {
+				// display: block;
+				list-style-type: decimal;
+			}
+			
       &-item {
-        display: flex;
+				// display: flex;
+				margin-block-start: 10px;
         flex-direction: column;
         gap: 10px;
         margin-inline-start: 20px;
+				
       }
     }
   }
@@ -229,6 +233,25 @@
   }
 }
 
+.table {
+  border-collapse: separate;
+  border-spacing: 10px 20px;
+	&__tr {
+		// margin-block-end: 10px; // Добавляем отступ между строками таблицы
+	}
+	&__td {
+		// margin: 10px 0;
+		&:nth-child(1) {
+			text-align: start;
+			padding-right: 10px; // Добавляем отступ справа
+		}
+		&:nth-child(2) {
+			text-align: end;
+			padding-left: 10px; // Добавляем отступ слева
+		}
+	}
+}
+
 .navigation-button {
   background-color: v.$color_navigation-button;
   border: 1px solid v.$color_aside_border;
@@ -267,6 +290,29 @@
   &--previous {
     text-align: start;
   }
+}
+
+.tag {
+	display: inline-block;
+	text-align: center;
+	padding: 5px 10px;
+	border-radius: 10px;
+	&__name {
+		// white-space: nowrap;
+	}
+
+	&--cao {
+		background-color: v.$color_tag_cao;
+	}
+	&--classic {
+		background-color: v.$color_tag_classic;
+	}
+	&--creation-kit-resave {
+		background-color: v.$color_tag_creation-kit-resave;
+	}
+	&--esl {
+		background-color: v.$color_tag_creation-kit-esl;
+	}
 }
 
 @media (max-width: 1280px) {
