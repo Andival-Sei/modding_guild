@@ -67,19 +67,32 @@ burger.addEventListener('click', () => {
   }
 
 
-	let fomodToggle = document.getElementsByClassName('fomod__toggle');
+	const fomodToggles = document.getElementsByClassName('fomod__toggle');
 
-	for (let i = 0; i < fomodToggle.length; i++) {
-		fomodToggle[i].addEventListener('click', function () {
-			this.classList.toggle('active');
-			let fomodContent = this.nextElementSibling;
-			if (fomodContent.style.maxHeight) {
-				fomodContent.style.maxHeight = null;
-			} else {
-				fomodContent.style.maxHeight = fomodContent.scrollHeight + 'px';
-			}
-		})
-	}
+  for (let i = 0; i < fomodToggles.length; i++) {
+    fomodToggles[i].addEventListener('click', function () {
+      this.classList.toggle('active');
+      const fomodContent = this.nextElementSibling;
+      const slides = fomodContent.querySelectorAll('.slider__slide');
+      
+      // Находим высоту самого большого слайда
+      let maxHeight = 0;
+      slides.forEach(slide => {
+        const page = slide.querySelector('.slider__page');
+        const measureTarget = page || slide;
+        const slideHeight = measureTarget.scrollHeight + parseFloat(window.getComputedStyle(slide).paddingTop) + parseFloat(window.getComputedStyle(slide).paddingBottom);
+        if (slideHeight > maxHeight) {
+          maxHeight = slideHeight;
+        }
+      });
+
+      if (fomodContent.style.maxHeight) {
+        fomodContent.style.maxHeight = null;
+      } else {
+        fomodContent.style.maxHeight = maxHeight + 'px';
+      }
+    });
+  }
 
 
 	const sliders = document.querySelectorAll('.slider');
