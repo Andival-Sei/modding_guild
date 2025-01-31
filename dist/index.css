@@ -644,6 +644,11 @@ body {
   transform: translateY(-5%);
   transition: transform 0.2s ease;
 }
+.slider__control.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  transform: translateY(5%);
+}
 .slider__control::before {
   content: "";
   display: block;

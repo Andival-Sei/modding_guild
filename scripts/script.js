@@ -83,22 +83,55 @@ burger.addEventListener('click', () => {
 
 
 	const sliders = document.querySelectorAll('.slider');
-	sliders.forEach(slider => {
-		const slidesContainer = slider.querySelector('.slider__slides');
-		const slides = slider.querySelectorAll('.slider__slide');
-		let currentIndex = 0;
+sliders.forEach(slider => {
+  const slidesContainer = slider.querySelector('.slider__slides');
+  const slides = slider.querySelectorAll('.slider__slide');
+  const btnNext = slider.querySelector('.slider__control--next');
+  const btnPrev = slider.querySelector('.slider__control--prev');
+  
+  let currentIndex = 0;
 
-		slider.querySelector('.slider__control--next')
-			.addEventListener('click', () => {
-				currentIndex = (currentIndex + 1) % slides.length;
-				slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
-			});
+  // Функция обновления состояния кнопок
+  function updateButtons() {
+    // Если на первом слайде
+    if (currentIndex === 0) {
+      btnPrev.classList.add('disabled');
+      btnPrev.disabled = true;
+    } else {
+      btnPrev.classList.remove('disabled');
+      btnPrev.disabled = false;
+    }
+    
+    // Если на последнем слайде
+    if (currentIndex === slides.length - 1) {
+      btnNext.classList.add('disabled');
+      btnNext.disabled = true;
+    } else {
+      btnNext.classList.remove('disabled');
+      btnNext.disabled = false;
+    }
+  }
 
-		slider.querySelector('.slider__control--prev')
-			.addEventListener('click', () => {
-				currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-				slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
-			});
+  // Изначальное обновление
+  updateButtons();
+
+  // Переключение вперёд
+  btnNext.addEventListener('click', () => {
+    if (currentIndex < slides.length - 1) {
+      currentIndex++;
+      slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+      updateButtons();
+    }
+  });
+
+  // Переключение назад
+  btnPrev.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+      updateButtons();
+    }
+  });
 });
 
 });

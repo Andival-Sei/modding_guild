@@ -410,6 +410,12 @@
       transition: transform 0.2s ease;
     }
 
+    &.disabled {
+      cursor: not-allowed;
+      opacity: 0.5; // Можно настраивать
+			transform: translateY(5%);
+    }
+
     &::before {
       content: "";
       display: block;
