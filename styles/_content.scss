@@ -372,7 +372,12 @@
 
 .slider {
   position: relative;
-  overflow: hidden;
+
+	&__wrapper {
+    overflow: hidden;
+    transition: max-height 0.3s ease; // Плавное изменение высоты
+  }
+
   &__slides {
     transition: transform 0.4s ease;
     display: flex;

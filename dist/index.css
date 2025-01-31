@@ -609,7 +609,10 @@ body {
 
 .slider {
   position: relative;
+}
+.slider__wrapper {
   overflow: hidden;
+  transition: max-height 0.3s ease;
 }
 .slider__slides {
   transition: transform 0.4s ease;

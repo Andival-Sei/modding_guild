@@ -83,55 +83,68 @@ burger.addEventListener('click', () => {
 
 
 	const sliders = document.querySelectorAll('.slider');
-sliders.forEach(slider => {
-  const slidesContainer = slider.querySelector('.slider__slides');
-  const slides = slider.querySelectorAll('.slider__slide');
-  const btnNext = slider.querySelector('.slider__control--next');
-  const btnPrev = slider.querySelector('.slider__control--prev');
-  
-  let currentIndex = 0;
 
-  // Функция обновления состояния кнопок
-  function updateButtons() {
-    // Если на первом слайде
-    if (currentIndex === 0) {
-      btnPrev.classList.add('disabled');
-      btnPrev.disabled = true;
-    } else {
-      btnPrev.classList.remove('disabled');
-      btnPrev.disabled = false;
-    }
+  sliders.forEach((slider) => {
+    const sliderWrapper = slider.querySelector('.slider__wrapper');
+    const slidesContainer = slider.querySelector('.slider__slides');
+    const slides = slider.querySelectorAll('.slider__slide');
+    const btnNext = slider.querySelector('.slider__control--next');
+    const btnPrev = slider.querySelector('.slider__control--prev');
     
-    // Если на последнем слайде
-    if (currentIndex === slides.length - 1) {
-      btnNext.classList.add('disabled');
-      btnNext.disabled = true;
-    } else {
-      btnNext.classList.remove('disabled');
-      btnNext.disabled = false;
+    let currentIndex = 0;
+
+    // Функция подстройки высоты под текущий слайд
+    function adjustHeight() {
+      if (!slides.length) return;
+      const activeSlide = slides[currentIndex];
+      const page = activeSlide.querySelector('.slider__page');
+      const measureTarget = page || activeSlide;
+
+      // Используем scrollHeight для учёта всего контента и внутренних отступов
+      const newHeight = measureTarget.scrollHeight + parseFloat(window.getComputedStyle(activeSlide).paddingTop) + parseFloat(window.getComputedStyle(activeSlide).paddingBottom);
+      console.log('Adjusting height to:', newHeight);
+      sliderWrapper.style.maxHeight = newHeight + 'px';
     }
-  }
 
-  // Изначальное обновление
-  updateButtons();
+    function updateButtons() {
+      btnPrev.disabled = (currentIndex === 0);
+      btnNext.disabled = (currentIndex === slides.length - 1);
+      btnPrev.classList.toggle('disabled', currentIndex === 0);
+      btnNext.classList.toggle('disabled', currentIndex === slides.length - 1);
+    }
 
-  // Переключение вперёд
-  btnNext.addEventListener('click', () => {
-    if (currentIndex < slides.length - 1) {
-      currentIndex++;
-      slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+    // Изначальная настройка
+    requestAnimationFrame(() => {
+      adjustHeight();
       updateButtons();
-    }
-  });
+    });
 
-  // Переключение назад
-  btnPrev.addEventListener('click', () => {
-    if (currentIndex > 0) {
-      currentIndex--;
-      slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
-      updateButtons();
-    }
+    // Переключение вперёд
+    btnNext?.addEventListener('click', () => {
+      if (currentIndex < slides.length - 1) {
+        currentIndex++;
+        slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+        // Дождёмся применения transform, потом считаем
+        requestAnimationFrame(() => {
+          adjustHeight();
+          updateButtons();
+        });
+      }
+    });
+
+    // Переключение назад
+    btnPrev?.addEventListener('click', () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+        requestAnimationFrame(() => {
+          adjustHeight();
+          updateButtons();
+        });
+      }
+    });
   });
-});
 
 });
