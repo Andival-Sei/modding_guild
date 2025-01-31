@@ -694,7 +694,7 @@
                                     >
                                   </label>
                                 </fieldset>
-																<fieldset class="slider__page-section">
+                                <fieldset class="slider__page-section">
                                   <h6 class="slider__section-title">
                                     Секция 2
                                   </h6>
@@ -727,7 +727,7 @@
                                     >
                                   </label>
                                 </fieldset>
-																<fieldset class="slider__page-section">
+                                <fieldset class="slider__page-section">
                                   <h6 class="slider__section-title">
                                     Секция 2
                                   </h6>
@@ -761,7 +761,6 @@
                                   </label>
                                 </fieldset>
                               </fieldset>
-															
                             </li>
                             <li class="slider__slide">
                               <fieldset class="slider__page">
@@ -833,7 +832,7 @@
                                     >
                                   </label>
                                 </fieldset>
-																<fieldset class="slider__page-section">
+                                <fieldset class="slider__page-section">
                                   <h6 class="slider__section-title">
                                     Секция 2
                                   </h6>
@@ -866,9 +865,7 @@
                                     >
                                   </label>
                                 </fieldset>
-																
                               </fieldset>
-															
                             </li>
                           </ul>
                         </div>
@@ -886,6 +883,155 @@
                   </div>
                 </div>
               </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="guide__section" id="section5">
+          <div class="containder">
+            <div class="guide__block-title">
+              <h2 class="guide__title">Извлечение файлов BSA</h2>
+            </div>
+
+            <div class="guide__block-text">
+              <p class="guide__text">
+                Файл Bethesda Softworks Archive (BSA) — это тип файла сжатия
+                (аналогичный ZIP, 7ZIP или аналогичному файлу), который Skyrim
+                использует для хранения ресурсов, используемых файлом плагина.
+                Обычно это включает в себя такие вещи, как файлы текстур,
+                звуковые файлы, скрипты и другие подобные ресурсы. В большинстве
+                случаев, если автор модификаций (MA) упаковывает свои активы в
+                BSA, мы оставляем его в покое и позволяем ему работать так, как
+                он был задуман.
+              </p>
+              <p class="guide__text">
+                Для целей текущего руководства мы будем извлекать файлы BSA в
+                нескольких случаях:
+              </p>
+
+              <ol class="guide__text-list guide__text-list--numbered">
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    BSA поставляется с файлом плагина "Dummy". Это означает, что
+                    в файле плагина нет фактических записей, и что файл плагина
+                    существует только для того, чтобы BSA был прочитан игрой. В
+                    этом нет никакой необходимости, поэтому в этой ситуации мы
+                    извлечем BSA и удалим плагин.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Мы будем использовать плагин как часть Merge, что лишит файл
+                    плагина возможности считывать этот BSA, что означает, что
+                    активы останутся неиспользованными.
+                  </p>
+                </li>
+              </ol>
+              <p class="guide__text">
+                Для этого мы будем использовать плагин BSA Extractor, который
+                входит в состав Mod Organizer 2. Есть два способа добиться
+                этого.
+              </p>
+              <p class="guide__text text-highlight text-underline">
+                Вариант 1: Обычный, автомагический способ
+              </p>
+              <p class="guide__text">
+                Плагин включен по умолчанию, но мы хотим изменить одну из
+                настроек плагина, выполнив следующие действия:
+              </p>
+              <ol class="guide__text-list guide__text-list--numbered">
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Нажмите на значок «гаечный ключ и отвертка» в левом верхнем
+                    углу MO2.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">Перейдите на вкладку Плагины.</p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Найдите и выберите плагин BSA Extractor.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    С правой стороны убедитесь, что для параметра
+                    <span class="text-highlight">only_alternate_source</span>
+                    установлено значение false.
+                  </p>
+                </li>
+              </ol>
+              <p class="guide__text">
+                Каждый раз, когда устанавливается мод, содержащий файл BSA,
+                появляется запрос с вопросом, хотите ли вы извлечь файл BSA.
+                Есть три варианта -
+                <span class="text-highlight"
+                  >будьте внимательны, какую кнопку вы нажимаете</span
+                >. Для модов, которые вы хотите извлечь (помечены значком
+                тегом), <span class="text-highlight">ВЫБЕРИТЕ ДА</span>. Будьте
+                осторожны и не отключите подсказку! Если вы это сделаете, вы
+                можете снова включить их на вкладке «Общие» в разделе
+                «Настройки», нажав кнопку «Сбросить выбор диалогового окна».
+              </p>
+              <p class="guide__text">
+                Запрос BSA Extractor также спросит, хотите ли вы удалить BSA
+                после извлечения - выберите Да для этого тоже.
+              </p>
+              <p class="guide__text">
+                Для всех остальных модов
+                <span class="text-highlight">ВЫБЕРИТЕ НЕТ</span>.
+              </p>
+              <p class="guide__text">
+                На этом этапе вы получите уведомление во время установки для
+                любого мода, который включает BSA, с вопросом, хотите ли вы
+                извлечь его. Если в инструкциях указано, что это необходимо,
+                нажмите «Да»; в противном случае нажмите кнопку Нет. В последней
+                версии MO2 экстрактор BSA также спросит, хотите ли вы удалить
+                BSA после его извлечения. Скажите «да».
+              </p>
+              <p class="guide__text text-highlight text-underline">
+                Вариант 2: Ручной способ
+              </p>
+              <p class="guide__text">
+                Если вы случайно отключили приглашение или по какой-то другой
+                причине поняли, что не извлекли нужный BSA, вы можете сделать
+                это вручную.
+              </p>
+
+              <ol class="guide__text-list guide__text-list--numbered">
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Выберите вкладку «Архив» на правой панели MO2.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Прокрутите список архивов BSA (они перечислены вместе с
+                    файлом плагина, с которым они связаны).
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Как только вы найдете файл, который хотите извлечь, <span class="text-highlight">щелкните
+                    правой кнопкой</span> мыши имя файла и выберите <span class="text-highlight">ИЗВЛЕЧЬ</span>.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Вам будет предложено указать место извлечения. Найдите
+                    папку, которая совпадает с названием мода, с которым связана
+                    BSA.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Файлы будут извлечены, но BSA-файл все еще будет
+                    присутствовать. Его можно удалить из своего местоположения с
+                    помощью обычных методов проводника.
+                  </p>
+                </li>
+              </ol>
             </div>
           </div>
         </section>
@@ -929,7 +1075,7 @@
                 <a href="#section4">Руководство по выбору FOMOD</a>
               </li>
               <li class="aside-navigation__menu-item" data-section="section5">
-                <a href="#section5">Системные характеристики</a>
+                <a href="#section5">Извлечение файлов BSA</a>
               </li>
               <div class="aside-navigation__indicator"></div>
             </ul>

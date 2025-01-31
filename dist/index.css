@@ -402,7 +402,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin: 0 10px 10px 10px;
+  margin: 0 50px 10px 50px;
+  list-style-type: disc;
 }
 .guide__text-list--numbered {
   list-style-type: decimal;
@@ -431,6 +432,10 @@ body {
 
 .text-highlight {
   color: #9499ff;
+}
+.text-underline {
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 .message-block {
