@@ -1,22 +1,26 @@
 $color_main: #1b1b1f;
-$color_aside: #0f0f10; 
+$color_aside: #0f0f10;
 $color_header: rgba(27, 27, 31, 0.5);
 $color_headerBorder: #000;
 $color_hoverHeader: #9398fd;
-$gradient_main_title: linear-gradient(180deg, rgb(229, 221, 221) 0%, rgb(234, 135, 50) 100%);
+$gradient_main_title: linear-gradient(
+  180deg,
+  rgb(229, 221, 221) 0%,
+  rgb(234, 135, 50) 100%
+);
 $color_description: #a9a9a9;
 $gradient-button-start: linear-gradient(
-        45deg,
-        rgb(201, 125, 55) 27%,
-        rgb(221, 79, 31) 69%,
-        rgb(49, 48, 47) 100%
-      );
+  45deg,
+  rgb(201, 125, 55) 27%,
+  rgb(221, 79, 31) 69%,
+  rgb(49, 48, 47) 100%
+);
 $gradient-button-youtube: linear-gradient(
-        -45deg,
-        rgb(204, 62, 58) 27%,
-        rgb(221, 31, 31) 69%,
-        rgb(49, 48, 47) 100%
-      );			
+  -45deg,
+  rgb(204, 62, 58) 27%,
+  rgb(221, 31, 31) 69%,
+  rgb(49, 48, 47) 100%
+);
 $color_text: #dfdfd6;
 $color_message-box_notice_border: #636cff;
 $color_message-box_notice_text: #bcc0ea;
@@ -33,10 +37,21 @@ $color_navigation-button: #2f3035;
 $color_navigation-button_hover: #353536;
 $color_navigation-button_hover_active: #474747;
 
-
 // Цвета тегов
 
 $color_tag_cao: #2f8a16;
 $color_tag_classic: #195c14;
 $color_tag_creation-kit-resave: #d21913;
-$color_tag_creation-kit-esl: #0808ef;
+$color_tag_esl: #0808ef;
+$color_tag_bsa: #3da19c;
+$color_tag_loot: #806056;
+$color_tag_removal-tool: #206caf;
+$color_tag_tool: #636363;
+$color_tag_xedit-qac: #d79a40;
+$color_tag_zmerge: #831482;
+$color_tag_special-instructions: #9a1c9a;
+
+// Какие-то цвета для фомода
+
+$color_fomod_page: #424647;
+$color_fomod_page-section: #272931;

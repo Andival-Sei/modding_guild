@@ -67,4 +67,38 @@ burger.addEventListener('click', () => {
   }
 
 
+	let fomodToggle = document.getElementsByClassName('fomod__toggle');
+
+	for (let i = 0; i < fomodToggle.length; i++) {
+		fomodToggle[i].addEventListener('click', function () {
+			this.classList.toggle('active');
+			let fomodContent = this.nextElementSibling;
+			if (fomodContent.style.maxHeight) {
+				fomodContent.style.maxHeight = null;
+			} else {
+				fomodContent.style.maxHeight = fomodContent.scrollHeight + 'px';
+			}
+		})
+	}
+
+
+	const sliders = document.querySelectorAll('.slider');
+	sliders.forEach(slider => {
+		const slidesContainer = slider.querySelector('.slider__slides');
+		const slides = slider.querySelectorAll('.slider__slide');
+		let currentIndex = 0;
+
+		slider.querySelector('.slider__control--next')
+			.addEventListener('click', () => {
+				currentIndex = (currentIndex + 1) % slides.length;
+				slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+			});
+
+		slider.querySelector('.slider__control--prev')
+			.addEventListener('click', () => {
+				currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+				slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+			});
+});
+
 });

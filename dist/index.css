@@ -554,6 +554,118 @@ body {
 .tag--esl {
   background-color: #0808ef;
 }
+.tag--bsa {
+  background-color: #3da19c;
+}
+.tag--loot {
+  background-color: #806056;
+}
+.tag--removal-tool {
+  background-color: #206caf;
+}
+.tag--tool {
+  background-color: #636363;
+}
+.tag--xedit-qac {
+  background-color: #d79a40;
+  white-space: nowrap;
+}
+.tag--zmerge {
+  background-color: #831482;
+}
+.tag--special-instructions {
+  background-color: #9a1c9a;
+}
+
+.fomod {
+  background-color: #2f3035;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+.fomod__toggle {
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.fomod__toggle:hover {
+  background-color: #353536;
+  border-radius: 5px;
+}
+.fomod__toggle.active {
+  background-color: #353536;
+  border-radius: 5px;
+  border-block-end: 2px solid #0f0f10;
+  border-end-start-radius: 0;
+  border-end-end-radius: 0;
+}
+.fomod__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+.fomod__content-wrapper {
+  padding: 10px;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+.slider__slides {
+  transition: transform 0.4s ease;
+  display: flex;
+}
+.slider__slide {
+  padding: 30px 50px;
+  min-width: 100%;
+  flex-shrink: 0;
+}
+.slider__control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.slider__control--prev {
+  left: 10px;
+}
+.slider__control--next {
+  right: 10px;
+}
+.slider__page {
+  background-color: #424647;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.slider__page-title {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 10px 10px;
+}
+.slider__page-section {
+  padding: 10px 10px 16px 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #272931;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.slider__section-title {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 15px 10px;
+}
+.slider__label {
+  margin: 0 0 0 30px;
+}
+.slider__label-text {
+  padding: 0 0 0 15px;
+}
 
 @media (max-width: 1280px) {
   .aside-navigation {
