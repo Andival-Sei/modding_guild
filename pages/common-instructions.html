@@ -122,6 +122,7 @@
             </div>
           </div>
         </section>
+
         <section class="guide__section" id="section2">
           <div class="container">
             <div class="guide__block-title">
@@ -394,6 +395,7 @@
             </div>
           </div>
         </section>
+
         <section class="guide__section" id="section4">
           <div class="containder">
             <div class="guide__block-title">
@@ -1013,8 +1015,10 @@
                 </li>
                 <li class="guide__text-list-item">
                   <p class="guide__text">
-                    Как только вы найдете файл, который хотите извлечь, <span class="text-highlight">щелкните
-                    правой кнопкой</span> мыши имя файла и выберите <span class="text-highlight">ИЗВЛЕЧЬ</span>.
+                    Как только вы найдете файл, который хотите извлечь,
+                    <span class="text-highlight">щелкните правой кнопкой</span>
+                    мыши имя файла и выберите
+                    <span class="text-highlight">ИЗВЛЕЧЬ</span>.
                   </p>
                 </li>
                 <li class="guide__text-list-item">
@@ -1029,6 +1033,358 @@
                     Файлы будут извлечены, но BSA-файл все еще будет
                     присутствовать. Его можно удалить из своего местоположения с
                     помощью обычных методов проводника.
+                  </p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <section class="guide__section" id="section6">
+          <div class="containder">
+            <div class="guide__block-title">
+              <h2 class="guide__title">Конвертация старых плагинов</h2>
+              <p class="guide__description">Работа со «старыми, но хорошими»</p>
+            </div>
+
+            <div class="guide__block-text">
+              <p class="guide__text">
+                В оригинальной версии Skyrim (Skyrim: LE) использовалась немного
+                другая версия файлов плагина, чем в Skyrim: SE (Form 43 vs. Form
+                44). Поскольку в руководстве используется ряд модов, которые
+                изначально были разработаны и выпущены для Skyrim: LE, плагины
+                будут в этой старой форме. Хотя эти файлы обычно не вызывают
+                проблем, это очень простой процесс, чтобы конвертировать старый
+                формат в более новый и убедиться в этом.
+              </p>
+              <p class="guide__text">
+                Для выполнения этого преобразования мы будем использовать
+                Creation Kit. Все моды, требующие этого преобразования, будут
+                иметь тег Creatin Kit Resave.
+              </p>
+              <p class="guide__text text-highlight text-underline">
+                1. Конвертируем плагин с помощью Creation Kit
+              </p>
+
+              <ol class="guide__text-list guide__text-list--numbered">
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Убедитесь, что папка Overwrite пуста. Он всегда будет указан
+                    последним на левой панели MO2. Если какие-либо файлы
+                    присутствуют, их можно удалить.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    В раскрывающемся меню «Исполняемый файл» MO2 выберите и
+                    запустите Creation Kit.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    После загрузки откройте меню
+                    <span class="text-highlight">«Файл»</span> и выберите
+                    <span class="text-highlight">«Данные...»</span>
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Найдите файл плагина, который нужно конвертировать, и
+                    выберите
+                    <span class="text-highlight"
+                      >«Установить как активный файл»</span
+                    >.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Нажмите OK и дождитесь завершения загрузки Creation Kit.
+                  </p>
+                  <ul class="guide__text-list">
+                    <li class="guide__text-list-item">
+                      <p class="guide__text">
+                        В окне в фоновом режиме будут отображаться
+                        многочисленные ошибки. Это нормально и их можно
+                        игнорировать. Они никак не повлияют на этот процесс.
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    После завершения процесса загрузки выберите
+                    <span class="text-highlight">«Файл»</span>, а затем
+                    <span class="text-highlight">«Сохранить»</span>.
+                  </p>
+                  <ul class="guide__text-list">
+                    <li class="guide__text-list-item">
+                      <p class="guide__text">
+                        Вы правильно прочитали. Как только он загрузится,
+                        СОХРАНИТЕ ЕГО. Это буквально все, что нам нужно сделать
+                        для конвертации плагина.
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">Закройте набор для создания.</p>
+                </li>
+              </ol>
+              <p class="guide__text">
+                Обновленная версия плагина должна была перезаписывать старую
+                версию. Для преобразования не требуется никаких дополнительных
+                действий. Были редкие сообщения о том, что процесс не сработал,
+                но проверить процесс конвертации можно с помощью:
+              </p>
+              <p class="guide__text text-highlight text-underline">
+                2. Проверка плагина с помощью SSEEdit
+              </p>
+
+              <ol class="guide__text-list guide__text-list--numbered">
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    В раскрывающемся меню «Исполняемый файл» MO2 выберите и
+                    запустите xEdit.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Когда начальная загрузка будет завершена,
+                    <span class="text-highlight"
+                      >щелкните правой кнопкой мыши</span
+                    >
+                    в окне со списком плагинов и выберите
+                    <span class="text-highlight">«Выбрать нет»</span>.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Найдите преобразованный плагин в списке и
+                    <span class="text-highlight">ДВАЖДЫ КЛИКНИТЕ</span> по нему.
+                    xEdit должен начать загрузку снова. Найдите сообщение
+                    "Background Loader: finished", указывающее на завершение
+                    загрузки.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Убедитесь, что последний плагин на левой панели — это тот,
+                    который вы проверяете.
+                    <span class="text-highlight"
+                      >ЩЕЛКНИТЕ ПРАВОЙ КНОПКОЙ МЫШИ</span
+                    >
+                    этот плагин и выберите
+                    <span class="text-highlight"
+                      >«Проверить на наличие ошибок»</span
+                    >.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Должно появиться сообщение «Все готово!». Это говорит о
+                    чистом плагине, который будет работать.
+                  </p>
+                  <ul class="guide__text-list">
+                    <li class="guide__text-list-item">
+                      <p class="guide__text">
+                        Если об ошибках сообщается, вам нужно будет либо
+                        исправить их, либо попробовать конвертацию плагина
+                        второй раз, прежде чем переходить к следующему шагу.
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    <span class="text-highlight"
+                      >ЩЕЛКНИТЕ ПРАВОЙ КНОПКОЙ МЫШИ</span
+                    >
+                    ПО ПЛАГИНУ еще раз и выберите
+                    <span class="text-highlight">«Сортировать мастера»</span>.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Выйдите из xEDIT. Обязательно сохраните измененный плагин.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Запустите плагин через xEdit Quick Auto Clean.
+                  </p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <section class="guide__section" id="section7">
+          <div class="containder">
+            <div class="guide__block-title">
+              <h2 class="guide__title">Cathedral Assets Optimizer</h2>
+              <p class="guide__description">Как правильно доить САО</p>
+            </div>
+
+            <div class="guide__block-text">
+              <p class="guide__text">
+                Последняя общая задача, которая появится в руководстве для
+                работы, — это запуск мода через Cathedral Asset Optimizer (CAO).
+                Как упоминалось в разделе «Конвертация плагинов», некоторые из
+                модов, которые мы используем, взяты из Skyrim: LE, а сетки и
+                текстуры, которые с ними связаны, не всегда хорошо сочетаются со
+                Skyrim: SE. Чтобы ваша игровая система не взорвалась, было
+                создано несколько различных профилей:
+              </p>
+
+              <ul class="guide__text-list">
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Lexy's LOTD SE - BSA: Оптимизирует сетки и текстуры, а затем
+                    упаковывает их в BSA.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Lexy's LOTD SE - No BSA: Оптимизирует сетки и текстуры, но
+                    оставляет их в виде свободных файлов.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Lexy's LOTD SE - WICO: Специально настроен для оптимизации
+                    сеток и текстур для WICO - Windsong Immersive Character
+                    Overhaul, следуя специальным инструкциям руководства для
+                    него.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    SSE - Downsize Textures - 2K: Уменьшает любую текстуру,
+                    размер которой превышает 2048 x 2048, до 2K. Если вы
+                    попытаетесь сохранить немного видеопамяти, не стесняйтесь
+                    использовать этот профиль для уменьшения некоторых текстур
+                    там, где вы считаете это целесообразным.
+                  </p>
+                </li>
+              </ul>
+              <p class="guide__text">
+                Моды, требующие такой обработки, будут иметь тег CAO вместе с
+                тем, какой профиль вам следует использовать.
+              </p>
+
+              <ol class="guide__text-list guide__text-list--numbered">
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    ЗАКРОЙТЕ MO2. CAO предназначен для работы ВНЕ Mod Organizer.
+                    Не стоит его минимизировать; ЗАКРОЙТЕ ЕГО.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Запустите CAO из исполняемого файла в папке установки.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Посмотрите на мод Особые указания. В нем будет указан тип
+                    профиля для использования в CAO. Убедитесь, что вы
+                    используете правильный профиль.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Нажмите на кнопку
+                    <span class="text-highlight">«Открыть каталог»</span>.
+                    Перейдите в папку с модом, который требует конвертации.
+                    Выберите эту папку.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Нажмите на кнопку
+                    <span class="text-highlight">«Журнал»</span>. Это покажет
+                    вам, что будет обрабатывать CAO.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    <span class="text-highlight"
+                      >Нажмите кнопку Выполнить.</span
+                    >
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Когда CAO завершит свой прогон, закройте программу.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Повторите шаги 2 - 7 для всех загруженных файлов для этого
+                    мода (основных, необязательных и прочих).
+                  </p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <section class="guide__section" id="section8">
+          <div class="containder">
+            <div class="guide__block-title">
+              <h2 class="guide__title">Mod Organizer 2 Removal Tool</h2>
+              <p class="guide__description">Вынос мусора</p>
+            </div>
+
+            <div class="guide__block-text">
+              <p class="guide__text">
+                Последняя общая задача, которая появится в Руководстве для работы, — это запуск мода через Mod Organizer Removal Tool. Инструмент упрощает удаление файлов из модов.
+              </p>
+              <p class="guide__text">
+                Моды, требующие такой обработки, будут иметь соответствующий тег.
+              </p>
+
+              
+
+              <ol class="guide__text-list guide__text-list--numbered">
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Выберите опцию "MO2 Removal Tool" в меню инструментов на панели инструментов MO2 (значок головоломки).
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Посмотрите на мод Особые указания. В нем будут перечислены все файлы, которые необходимо удалить.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Введите название мода, из которого вы хотите удалить файлы/папки (последний мод в вашем списке модов выбран по умолчанию).
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Скопируйте и вставьте контуры в поле под селектором мода.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Нажмите кнопку Выполнить. Откроется еще одно диалоговое окно.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Просмотрите файлы, которые будут удалены. Все пути с подстановочными знаками будут развернуты, чтобы показать, какие файлы были выбраны.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Нажмите «Удалить все», чтобы завершить удаление. Обратите внимание, что вы также можете инвертировать выбор, чтобы удалить все, КРОМЕ того, что вы изначально ввели. ЭТО ЭКСПЕРИМЕНТАЛЬНО. Помните, что вы НЕ МОЖЕТЕ отменить удаление из этого инструмента, я лично рекомендую использовать опцию "mohidden" при использовании этой функции.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    В корневой папке мода будет создан файл для регистрации сделанных вами удалений. Файл будет называться {modName}. {'delete'|'mohidden'}.log
                   </p>
                 </li>
               </ol>
@@ -1053,6 +1409,7 @@
           >
         </nav>
       </main>
+			
       <aside class="aside-navigation">
         <aside class="aside-navigation__container">
           <nav class="aside-navigation__menu">
@@ -1076,6 +1433,15 @@
               </li>
               <li class="aside-navigation__menu-item" data-section="section5">
                 <a href="#section5">Извлечение файлов BSA</a>
+              </li>
+              <li class="aside-navigation__menu-item" data-section="section6">
+                <a href="#section6">Конвертация старых плагинов</a>
+              </li>
+              <li class="aside-navigation__menu-item" data-section="section7">
+                <a href="#section7">Cathedral Assets Optimizer</a>
+              </li>
+              <li class="aside-navigation__menu-item" data-section="section8">
+                <a href="#section8">Mod Organizer 2 Removal Tool</a>
               </li>
               <div class="aside-navigation__indicator"></div>
             </ul>
