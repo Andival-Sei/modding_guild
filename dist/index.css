@@ -414,6 +414,9 @@ body {
   gap: 10px;
   margin-inline-start: 20px;
 }
+.guide__text--margine-top {
+  margin-block-start: 50px;
+}
 .guide__navigation-buttons {
   margin-block-start: 100px;
   display: flex;
@@ -436,6 +439,18 @@ body {
 .text-underline {
   text-decoration: underline;
   text-underline-offset: 5px;
+}
+.text-link {
+  cursor: pointer;
+}
+.text-link:hover {
+  color: #9a9cc6;
+  transition: color 0.3s ease;
+}
+.text-path {
+  color: #0f0f10;
+  background-color: #e0dfe4;
+  border-radius: 3px;
 }
 
 .message-block {
@@ -735,4 +750,87 @@ body {
   .navigation-button {
     inline-size: 200px;
   }
+}
+.mod {
+  background-color: #272626;
+  border-radius: 10px;
+  margin-block-start: 80px;
+  padding: 50px 30px 30px;
+  position: relative;
+}
+.mod__tags {
+  position: absolute;
+  inset-block-start: 10px;
+  inset-inline-end: 30px;
+}
+.mod__title-container {
+  display: flex;
+  justify-content: space-between;
+  margin-block-end: 16px;
+}
+.mod__title {
+  font-size: 25px;
+}
+.mod__badges {
+  margin-block-start: 20px;
+}
+.mod__subtitle-wrapper {
+  text-align: end;
+}
+.mod__divider {
+  margin-block-end: 16px;
+}
+.mod__description {
+  line-height: 1.5;
+}
+.mod__description:not(:first-child) {
+  margin-block-start: 1em;
+}
+.mod__files {
+  margin-block-start: 20px;
+  position: relative;
+  padding: 40px 30px 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #323030;
+}
+.mod__files-label {
+  position: absolute;
+  inset-block-start: 5px;
+  inset-inline-start: 5px;
+  color: #a9a9a9;
+}
+.mod__file {
+  line-height: 1.6;
+}
+.mod__file-type::after {
+  content: " — ";
+  color: #a9a9a9;
+  margin: 0 10px;
+}
+.mod__file-type--main {
+  color: #8196ec;
+}
+.mod__file-version {
+  color: #a9a9a9;
+}
+.mod__file-version::before {
+  content: " — ";
+  color: #a9a9a9;
+  margin: 0 10px;
+}
+.mod__file-version-number {
+  color: #fff;
+}
+.mod__instructions {
+  padding: 50px 10px 10px 10px;
+  position: relative;
+  background-color: #36353b;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.mod__instructions-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }

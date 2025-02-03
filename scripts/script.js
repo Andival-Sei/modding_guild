@@ -160,4 +160,67 @@ burger.addEventListener('click', () => {
     });
   });
 
+
+
+	const fileTypeElements = document.querySelectorAll('.mod__file-type');
+
+  fileTypeElements.forEach(el => {
+    if (el.classList.contains('mod__file-type--main')) {
+      el.textContent = 'Main File';
+    } else if (el.classList.contains('mod__file-type--update')) {
+      el.textContent = 'Update File';
+    } else if (el.classList.contains('mod__file-type--optional')) {
+      el.textContent = 'Optional File';
+    } else if (el.classList.contains('mod__file-type--miscellaneous')) {
+      el.textContent = 'Miscellaneous File';
+    }
+	});
+	
+	const filesLabels = document.querySelectorAll('.mod__files-label');
+  filesLabels.forEach(label => {
+    label.textContent = 'Файлы для скачивания';
+	});
+	
+	const fileVersionElements = document.querySelectorAll('.mod__file-version');
+
+  fileVersionElements.forEach(el => {
+    el.insertAdjacentText('afterbegin', 'Версия: ');
+	});
+	
+
+	const tagTextMap = {
+    'tag--cao': 'CAO',
+    'tag--classic': 'Classic',
+    'tag--creation-kit-resave': 'Creation Kit Resave',
+    'tag--esl': 'ESL',
+    'tag--bsa': 'Extract the BSA',
+		'tag--loot': 'Loot',
+		'tag--removal-tool': 'MO2 Removal Tool',
+		'tag--tool': 'Tool',
+		'tag--xedit-qac': 'xEdit - Quick Auto Clean',
+		'tag--zmerge': 'zMerge',
+		'tag--special-instructions': 'Special Instructions',
+    // Добавьте сюда остальные теги, которые используются на странице common-instructions
+    // например:
+    // 'tag--other': 'Другой текст'
+  };
+
+  // Находим все элементы с классом .tag
+  const tagElements = document.querySelectorAll('.tag');
+  
+  tagElements.forEach(tag => {
+    // Для каждого тега определяем его модификатор и находим вложенный элемент с классом .tag__name
+    for (const modifier in tagTextMap) {
+      if (tag.classList.contains(modifier)) {
+        const tagName = tag.querySelector('.tag__name');
+        if (tagName) {
+          tagName.textContent = tagTextMap[modifier];
+        }
+        // Если элемент имеет один из модификаторов, прекращаем проверку остальных
+        break;
+      }
+    }
+  });
+
+	
 });

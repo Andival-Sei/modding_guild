@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../dist/index.css" />
+    <script src="../scripts/script.js" defer></script>
+    <title>Предварительная установка</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__wrapper">
+            <a href="../index.html" class="header__title">Modding Guild</a>
+            <button class="header__burger">
+              <span class="header__burger-middle-line"></span>
+            </button>
+            <nav class="header__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">Начало</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">Руководство</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">Изменения</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <aside class="aside-links">aside</aside>
+      <main class="main main--guide guide">
+        <section class="guide__section" id="section1">
+          <div class="message-block message-block--warning">
+            <h5 class="message-block__title">Предупреждение</h5>
+            <div class="message-block__text">
+              Не пропустите эту страницу! На этой странице перечислены важные
+              шаги по настройке, которые имеют жизненно важное значение для
+              правильной установки руководства. Даже если вы уже делали
+              установки модифицированных версий, убедитесь, что вы следовали
+              всем этим указаниям!
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="guide__block-title">
+              <h2 class="guide__title">Некоторые напоминания</h2>
+              <p class="guide__description">
+                Если мы сказали это однажды, мы сказали это тысячу раз...
+              </p>
+            </div>
+            <div class="guide__block-text">
+              <p class="guide__text">
+                Еще раз, прежде чем мы начнем, на случай, если вы пропустили все
+                эти важные моменты:
+              </p>
+
+              <ol class="guide__text-list guide__text-list--numbered">
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    НЕ СОРТИРУЙТЕ LOOT, ПОКА НЕ ПОЛУЧИТЕ УКАЗАНИЯ.
+                  </p>
+                  <ol class="guide__text-list guide__text-list--numbered">
+                    <li class="guide__text-list-item">
+                      <p class="guide__text">
+                        LOOT не отсортирует порядок загрузки правильно, пока вы
+                        не завершите установку.
+                      </p>
+                    </li>
+                    <li class="guide__text-list-item">
+                      <p class="guide__text">
+                        LOOT сообщит об ошибках, которые, возможно, еще не были
+                        устранены.
+                      </p>
+                    </li>
+                  </ol>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    НЕ ОТКЛОНЯЙТЕСЬ ОТ ИНСТРУКЦИЙ РУКОВОДСТВА.
+                  </p>
+                  <ol class="guide__text-list guide__text-list--numbered">
+                    <li class="guide__text-list-item">
+                      <p class="guide__text">
+                        Доверяйте инструкциям руководства. Не добавляйте и не
+                        убавляйте из руководства. Даже то, о чем вы даже не
+                        подозреваете, может вызвать проблемы... мочь.
+                      </p>
+                    </li>
+                  </ol>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    ИЗ ЛЮБВИ К ТАЛОСУ (или другой выбранной вами
+                    Аэдра/Даэдра/Призрачной сущности) ЧИТАЙТЕ СТРАНИЦЫ МОДОВ
+                    NEXUS.
+                  </p>
+                  <ol class="guide__text-list guide__text-list--numbered">
+                    <li class="guide__text-list-item">
+                      <p class="guide__text">
+                        Многие сообщения об «ошибках», которые мы получили, были
+                        связаны с тем, что игроки не знали об изменениях,
+                        внесенных в игру руководством. Изменения, которые были
+                        полностью задуманы. Да, это МНОГО страниц с модами, и
+                        нет, мы не ожидаем, что вы запомните каждое слово, но мы
+                        ожидаем, что вы будете ответственно относиться к своей
+                        собственной компьютерной системе и точно знать, что вы
+                        делаете, загружая и устанавливая ее.
+                      </p>
+                    </li>
+                    <li class="guide__text-list-item">
+                      <p class="guide__text">
+                        Следуйте инструкциям по установке в руководстве и
+                        просмотрите страницы модов, если они отличаются. Любые
+                        требования, перечисленные на странице мода, будут
+                        рассмотрены позже в руководстве или в альтернативном
+                        моде.
+                      </p>
+                    </li>
+                  </ol>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    ОБРАТИТЕСЬ К СТРАНИЦЕ «ОБЩИЕ ИНСТРУКЦИИ», ЧТОБЫ УЗНАТЬ:
+                  </p>
+                  <ol class="guide__text-list guide__text-list--numbered">
+                    <li class="guide__text-list-item">
+                      <p class="guide__text">Extract the BSA инструкции.</p>
+                    </li>
+                    <li class="guide__text-list-item">
+                      <p class="guide__text">Creation kit Resave инструкции.</p>
+                    </li>
+                    <li class="guide__text-list-item">
+                      <p class="guide__text">CAO инструкции.</p>
+                    </li>
+                    <li class="guide__text-list-item">
+                      <p class="guide__text">Советы по установке мода.</p>
+                    </li>
+                  </ol>
+                </li>
+              </ol>
+              <p class="guide__text">
+                Имейте в виду, что это руководство предоставит большое
+                количество специально разработанных патчей, чтобы несколько
+                сотен модов, которые вы будете устанавливать, прекрасно играли
+                вместе. Внимание к деталям имеет решающее значение, если вы
+                хотите, чтобы все получилось так, как задумано. Делайте
+                перерывы. Ходьбы. Не мчитесь к финишу, а задайте хороший и
+                управляемый темп. Вздремните. СПАТЬ. Чего бы это ни стоило,
+                убедитесь, что вы можете обращать внимание на каждое слово.
+              </p>
+              <p class="guide__text">И на этой ноте...</p>
+              <p class="guide__text">Здесь... Мы... Начинаем!</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="guide__section" id="section2">
+          <div class="container">
+            <div class="guide__block-title">
+              <h2 class="guide__title">Расширения файлов Windows</h2>
+              <p class="guide__description">Сделать невидимое видимым</p>
+            </div>
+            <div class="guide__block-text">
+              <p class="guide__text">
+                Прежде всего, нам нужно убедиться, что расширения файлов Windows
+                видны.
+              </p>
+
+              <ol class="guide__text-list guide__text-list--numbered">
+                <li class="guide__text-list-item">
+                  <p class="guide__text">Откройте проводник Windows.</p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Нажмите на кнопку
+                    <span class="text-highlight">Просмотреть</span>, а в
+                    выпадающем окне наведите курсор на пункт
+                    <span class="text-highlight">Показать</span>.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Убедитесь, что установлен флажок "Расширения имен файлов".
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">Закройте окно.</p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <section class="guide__section" id="section3">
+          <div class="containder">
+            <div class="guide__block-title">
+              <h2 class="guide__title">Главные утилиты</h2>
+              <p class="guide__description">Предотвращаем беспорядки</p>
+            </div>
+
+            <article class="mod">
+              <div class="mod__tags">
+                <article class="tag tag--tool">
+                  <p class="tag__name"></p>
+                </article>
+              </div>
+              <div class="mod__title-container">
+                <div class="mod__title-wrapper">
+                  <h3 class="mod__title">.NET 8.0 SDK</h3>
+                  <div class="mod__badges">
+                    <a
+                      class="mod__link"
+                      href="https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-8.0.404-windows-x64-installer"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://img.shields.io/badge/%D0%A1%D1%81%D1%8B%D0%BB%D0%BA%D0%B0-%D0%A1%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-%D1%87%D1%82%D0%BE%D1%82%D0%BE"
+                        alt="Ссылка на страницу мода"
+                      />
+                    </a>
+                    <img
+                      src="https://img.shields.io/badge/%D0%92%D0%B5%D1%80%D1%81%D0%B8%D1%8F-8.0.404-%D1%87%D1%82%D0%BE%D1%82%D0%BE?color=%232483c3"
+                      alt="Версия мода"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/%D0%90%D0%B2%D1%82%D0%BE%D1%80-Microsoft-%D1%87%D1%82%D0%BE%D1%82%D0%BE?color=%232483c3"
+                      alt="Автор мода"
+                    />
+                  </div>
+                </div>
+                <!--  Код для примера, где будет перевод  -->
+                <!-- <div class="mod__subtitle-wrapper">
+                  <h3 class="mod__subtitle">Перевод</h3>
+                  <div class="mod__badges">
+                    <a
+                      class="mod__link"
+                      href="https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-8.0.404-windows-x64-installer"
+                    >
+                      <img
+                        src="https://img.shields.io/badge/%D0%A1%D1%81%D1%8B%D0%BB%D0%BA%D0%B0-%D0%A1%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-%D1%87%D1%82%D0%BE%D1%82%D0%BE"
+                        alt="Ссылка на страницу мода"
+                      />
+                    </a>
+                    <img
+                      src="https://img.shields.io/badge/%D0%92%D0%B5%D1%80%D1%81%D0%B8%D1%8F-8.0.404-%D1%87%D1%82%D0%BE%D1%82%D0%BE?color=%232483c3"
+                      alt="Версия мода"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/%D0%90%D0%B2%D1%82%D0%BE%D1%80-Microsoft-%D1%87%D1%82%D0%BE%D1%82%D0%BE?color=%232483c3"
+                      alt="Автор мода"
+                    />
+                  </div>
+                </div> -->
+              </div>
+
+              <hr class="mod__divider" />
+
+              <p class="mod__description">
+                .NET — это бесплатная, кроссплатформенная платформа разработчика
+                с открытым исходным кодом для создания различных типов
+                приложений. Это необходимо для правильной работы Synthesis и
+                Scrambled Bugs.
+              </p>
+
+              <fieldset class="mod__files">
+                <legend class="mod__files-label"></legend>
+                <p class="mod__file">
+                  <span class="mod__file-type mod__file-type--main"></span>.NET
+                  8.0 SDK (v8.0.404) - Windows x64 Installer<span
+                    class="mod__file-version"
+                    ><span class="mod__file-version-number">8.0.404</span></span
+                  >
+                </p>
+              </fieldset>
+            </article>
+            <article class="mod">
+              <div class="mod__tags">
+                <article class="tag tag--tool">
+                  <p class="tag__name"></p>
+                </article>
+              </div>
+              <div class="mod__title-container">
+                <div class="mod__title-wrapper">
+                  <h3 class="mod__title">
+                    Microsoft Visual C++ Redistributable for Visual Studio 2015,
+                    2017, 2019, and 2022
+                  </h3>
+                  <div class="mod__badges">
+                    <a
+                      class="mod__link"
+                      href="https://support.microsoft.com/en-gb/help/2977003/the-latest-supported-visual-c-downloads"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://img.shields.io/badge/%D0%A1%D1%81%D1%8B%D0%BB%D0%BA%D0%B0-%D0%A1%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-%D1%87%D1%82%D0%BE%D1%82%D0%BE"
+                        alt="Ссылка на страницу мода"
+                      />
+                    </a>
+                    <img
+                      src="https://img.shields.io/badge/%D0%92%D0%B5%D1%80%D1%81%D0%B8%D1%8F-X64-%D1%87%D1%82%D0%BE%D1%82%D0%BE?color=%232483c3"
+                      alt="Версия мода"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/%D0%90%D0%B2%D1%82%D0%BE%D1%80-Microsoft-%D1%87%D1%82%D0%BE%D1%82%D0%BE?color=%232483c3"
+                      alt="Автор мода"
+                    />
+                  </div>
+                </div>
+                <!--  Код для примера, где будет перевод  -->
+                <!-- <div class="mod__subtitle-wrapper">
+                  <h3 class="mod__subtitle">Перевод</h3>
+                  <div class="mod__badges">
+                    <a
+                      class="mod__link"
+                      href="https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-8.0.404-windows-x64-installer"
+                    >
+                      <img
+                        src="https://img.shields.io/badge/%D0%A1%D1%81%D1%8B%D0%BB%D0%BA%D0%B0-%D0%A1%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-%D1%87%D1%82%D0%BE%D1%82%D0%BE"
+                        alt="Ссылка на страницу мода"
+                      />
+                    </a>
+                    <img
+                      src="https://img.shields.io/badge/%D0%92%D0%B5%D1%80%D1%81%D0%B8%D1%8F-8.0.404-%D1%87%D1%82%D0%BE%D1%82%D0%BE?color=%232483c3"
+                      alt="Версия мода"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/%D0%90%D0%B2%D1%82%D0%BE%D1%80-Microsoft-%D1%87%D1%82%D0%BE%D1%82%D0%BE?color=%232483c3"
+                      alt="Автор мода"
+                    />
+                  </div>
+                </div> -->
+              </div>
+
+              <hr class="mod__divider" />
+
+              <p class="mod__description">
+                Распространяемый компонент Visual C++ устанавливает библиотеки
+                времени выполнения Microsoft C и C++ (MSVC). Эти библиотеки
+                требуются многим приложениям, созданным с использованием средств
+                Microsoft C и C++. Это необходимо для правильной работы Mod
+                Organizer 2 и LOOT.
+              </p>
+
+              <fieldset class="mod__files">
+                <legend class="mod__files-label"></legend>
+                <p class="mod__file">
+                  <span class="mod__file-type mod__file-type--main"></span
+                  >Microsoft Visual C++ распространяемый для Visual Studio 2015,
+                  2017, 2019 и 2022<span class="mod__file-version"
+                    ><span class="mod__file-version-number">X64</span></span
+                  >
+                </p>
+              </fieldset>
+            </article>
+          </div>
+        </section>
+
+        <section class="guide__section" id="section4">
+          <div class="containder">
+            <div class="guide__block-title">
+              <h2 class="guide__title">Официальный контент Bethesda</h2>
+              <p class="guide__description">
+                В комплекте с официальными ошибками Bethesda
+              </p>
+            </div>
+
+            <article class="mod">
+              <div class="mod__title-container">
+                <div class="mod__title-wrapper">
+                  <h3 class="mod__title">Skyrim Special Edition</h3>
+                  <div class="mod__badges">
+                    <a
+                      class="mod__link"
+                      href="https://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://img.shields.io/badge/%D0%A1%D1%81%D1%8B%D0%BB%D0%BA%D0%B0-%D0%A1%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-%D1%87%D1%82%D0%BE%D1%82%D0%BE"
+                        alt="Ссылка на страницу мода"
+                      />
+                    </a>
+                    <img
+                      src="https://img.shields.io/badge/%D0%92%D0%B5%D1%80%D1%81%D0%B8%D1%8F-1.6.1170-%D1%87%D1%82%D0%BE%D1%82%D0%BE?color=%232483c3"
+                      alt="Версия мода"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/%D0%90%D0%B2%D1%82%D0%BE%D1%80-Bethesda-%D1%87%D1%82%D0%BE%D1%82%D0%BE?color=%232483c3"
+                      alt="Автор мода"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <hr class="mod__divider" />
+
+              <p class="mod__description">
+                Тод Говард сказал, что это нужно купить.
+              </p>
+
+              <fieldset class="mod__files">
+                <legend class="mod__files-label"></legend>
+                <p class="mod__file">
+                  <span class="mod__file-type mod__file-type--main"></span
+                  >Skyrim Special Edition<span class="mod__file-version"
+                    ><span class="mod__file-version-number"
+                      >1.6.1170</span
+                    ></span
+                  >
+                </p>
+              </fieldset>
+            </article>
+
+            <div class="guide__block-text">
+              <h3 class="guide__text guide__text--subtitle">
+                Защита от обновлений Skyrim
+              </h3>
+              <p class="guide__text">
+                Bethesda периодически может обновлять игру. Это означает, что
+                SKSE (и куча модов, которые его используют) больше не будет
+                работать. Для того, чтобы STEAM не обновлял то что сломается,
+                необходимо выполнить следующие действия:
+              </p>
+
+              <ol class="guide__text-list guide__text-list--numbered">
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    В <span class="text-highlight">STEAM</span> щелкните правой
+                    кнопкой мыши по
+                    <span class="text-highlight"
+                      >The Elder Scrolls V: Skyrim Special Edition</span
+                    >.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    В появившемся меню нажмите на
+                    <span class="text-highlight">«Свойства»</span>.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Во всплывающем окне выберите вкладку
+                    <span class="text-highlight">«Обновления»</span>.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    В поле выбора в разделе
+                    <span class="text-highlight"
+                      >«Автоматические обновления»</span
+                    >
+                    выберите
+                    <span class="text-highlight">«Обновлять при запуске»</span>.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">Закройте окно.</p>
+                </li>
+              </ol>
+              <p class="guide__text">
+                Несмотря на формулировку, никаких обновлений игры не произойдет,
+                если вы не запустите игру через STEAM. Поскольку мы будем
+                запускать Skyrim через MO2 и программу запуска SKSE, триггерное
+                событие не произойдет, и ваша установка Skyrim останется в том
+                же состоянии, что и сейчас, пока вы не выполните обновление
+                самостоятельно.
+              </p>
+              <h3
+                class="guide__text guide__text--subtitle guide__text--margine-top"
+              >
+                Настройка Skyrim
+              </h3>
+              <p class="guide__text">
+                Прежде чем мы сможем начать заниматься моддингом, нам нужно
+                настроить Skyrim Special Edition, чтобы у нас была начальная
+                базовая конфигурация.
+              </p>
+              <p class="guide__text">
+                Запустите The Elder Scrolls V: Skyrim Special Edition через
+                контекстное меню Steam, чтобы открыть программу запуска Skyrim
+                Special Edition по умолчанию.
+              </p>
+
+              <ol class="guide__text-list guide__text-list--numbered">
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Нажмите <span class="text-highlight">Настройки</span>.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Нажмите кнопку <span class="text-highlight">Ультра</span>.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Установите
+                    <span class="text-highlight">Соотношение сторон</span> и
+                    <span class="text-highlight">Разрешение</span> в выпадающем
+                    списке. Они должны быть настроены на оптимальное разрешение
+                    ваших мониторов.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Установите для параметра
+                    <span class="text-highlight">Сглаживание</span> значение
+                    <span class="text-highlight">Выкл</span> в выпадающем
+                    списке. Это происходит в рамках подготовки к установке ENB.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Убедитесь, что
+                    <span class="text-highlight">флажок</span> для параметра
+                    <span class="text-highlight">«Оконный режим»</span> снят.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Нажмите кнопку <span class="text-highlight">Принять</span>,
+                    чтобы закрыть и сохранить.
+                  </p>
+                </li>
+              </ol>
+            </div>
+
+            <article class="mod">
+              <div class="mod__tags">
+                <article class="tag tag--tool">
+                  <p class="tag__name"></p>
+                </article>
+              </div>
+              <div class="mod__title-container">
+                <div class="mod__title-wrapper">
+                  <h3 class="mod__title">
+                    Skyrim Special Edition: Creation Kit
+                  </h3>
+                  <div class="mod__badges">
+                    <a
+                      class="mod__link"
+                      href="https://store.steampowered.com/app/1946180/Skyrim_Special_Edition_Creation_Kit/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://img.shields.io/badge/%D0%A1%D1%81%D1%8B%D0%BB%D0%BA%D0%B0-%D0%A1%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-%D1%87%D1%82%D0%BE%D1%82%D0%BE"
+                        alt="Ссылка на страницу мода"
+                      />
+                    </a>
+                    <img
+                      src="https://img.shields.io/badge/%D0%92%D0%B5%D1%80%D1%81%D0%B8%D1%8F-1.6.1378.1-%D1%87%D1%82%D0%BE%D1%82%D0%BE?color=%232483c3"
+                      alt="Версия мода"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/%D0%90%D0%B2%D1%82%D0%BE%D1%80-Bethesda-%D1%87%D1%82%D0%BE%D1%82%D0%BE?color=%232483c3"
+                      alt="Автор мода"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <hr class="mod__divider" />
+
+              <p class="mod__description">
+                Creation Kit — это официальный инструмент Bethesda для создания
+                и редактирования модов. Он был доступен в той или иной форме
+                через выпуск нескольких последних игр Fallout и Elder Scrolls.
+                Это бесценно, если вам интересно работать с модами для
+                современных игр Bethesda.
+              </p>
+              <p class="mod__description">
+                Помимо того, что Creation Kit (или CK) позволяет пользователям
+                создавать свои собственные оригинальные моды, он может
+                настраивать и изменять моды и официальный контент способами,
+                которые невозможны с помощью других инструментов.
+              </p>
+
+              <fieldset class="mod__files">
+                <legend class="mod__files-label"></legend>
+                <p class="mod__file">
+                  <span class="mod__file-type mod__file-type--main"></span
+                  >Skyrim Special Edition: Creation Kit<span
+                    class="mod__file-version"
+                    ><span class="mod__file-version-number"
+                      >1.6.1378.1</span
+                    ></span
+                  >
+                </p>
+              </fieldset>
+            </article>
+
+            <div class="guide__block-text">
+              <p class="guide__text">
+                Как и в случае со Skyrim, Creation Kit не поставляется с
+                предварительно настроенным .ini, а «стандартная» конфигурация
+                генерируется при первом запуске инструмента.
+              </p>
+              <p class="guide__text">
+                Хотя в этом руководстве вы не будете создавать новые моды, вы
+                будете импортировать моды, изначально разработанные для Skyrim
+                LE, а Creation Kit позволит вам повторно сохранять (и, таким
+                образом, обновлять) их для работы со Skyrim SE.
+              </p>
+
+              <ol class="guide__text-list guide__text-list--numbered">
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Скачайте и установите Special Editon: Creation Kit.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">Запустите Creation Kit через Steam.</p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    При запуске программа предложит извлечь папку «Scripts»,
+                    сделайте это.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    После загрузки Creation Kit выйдите из программы.
+                  </p>
+                </li>
+              </ol>
+
+              <p class="guide__text">
+                Необходимо внести несколько правок, прежде чем вы сможете
+                использовать CK для переноса модов.
+              </p>
+
+              <ol class="guide__text-list guide__text-list--numbered">
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Скачать готовый CreationKitCustom.ini
+                    <a
+                      class="text-highlight text-link"
+                      rel="noopener noreferrer"
+                      href="https://lexyslotd.com/download/creation-kit-custom-ini/"
+                      >можно здесь</a
+                    >.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Извлеките его в
+                    <span class="text-path"
+                      >Steam\steamapps\common\Skyrim Special Edition</span
+                    >
+                  </p>
+                </li>
+              </ol>
+              <p class="guide__text">
+                Пользовательский INI файл настраивает CK для разрешения
+                нескольких мастеров и правильной загрузки содержимого DLC.
+              </p>
+            </div>
+
+            <div class="message-block message-block--notice">
+              <h5 class="message-block__title">Извещение</h5>
+              <div class="message-block__text">
+                Архив скриптов в папке DATA может оставаться на месте после
+                извлечения скриптов во время установки. Они не причиняют вреда,
+                не оказывают дополнительного влияния на саму игру или Creation
+                Kit, и их можно смело игнорировать.
+              </div>
+            </div>
+
+            <article class="mod">
+              <div class="mod__tags">
+                <article class="tag tag--tool">
+                  <p class="tag__name"></p>
+                </article>
+                <article class="tag tag--special-instructions">
+                  <p class="tag__name"></p>
+                </article>
+              </div>
+              <div class="mod__title-container">
+                <div class="mod__title-wrapper">
+                  <h3 class="mod__title">
+                    Creation Kit Platform Extended for Skyrim
+                  </h3>
+                  <div class="mod__badges">
+                    <a
+                      class="mod__link"
+                      href="https://www.nexusmods.com/skyrimspecialedition/mods/71371"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="https://img.shields.io/badge/%D0%A1%D1%81%D1%8B%D0%BB%D0%BA%D0%B0-%D0%A1%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-%D1%87%D1%82%D0%BE%D1%82%D0%BE"
+                        alt="Ссылка на страницу мода"
+                      />
+                    </a>
+                    <img
+                      src="https://img.shields.io/badge/%D0%92%D0%B5%D1%80%D1%81%D0%B8%D1%8F-0.4--b952-%D1%87%D1%82%D0%BE%D1%82%D0%BE?color=%232483c3"
+                      alt="Версия мода"
+                    />
+                    <img
+                      src="https://img.shields.io/badge/%D0%90%D0%B2%D1%82%D0%BE%D1%80-Nukem--perchik71-%D1%87%D1%82%D0%BE%D1%82%D0%BE?color=%232483c3"
+                      alt="Автор мода"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <hr class="mod__divider" />
+
+              <p class="mod__description">
+                Различные патчи и исправления ошибок для Creation Kit SE, чтобы
+                облегчить жизнь.
+              </p>
+              <p class="mod__description">
+                Набор модификаций, улучшений и ресурсов для обратного
+                проектирования для SSE CK версий 1.5 и 1.6.
+              </p>
+
+              <fieldset class="mod__files">
+                <legend class="mod__files-label"></legend>
+                <p class="mod__file">
+                  <span class="mod__file-type mod__file-type--main"></span>CK
+                  Platform Extended 0.4-b952<span class="mod__file-version"
+                    ><span class="mod__file-version-number"
+                      >0.4-b952</span
+                    ></span
+                  >
+                </p>
+              </fieldset>
+
+              <div class="mod__instructions">
+                <div class="mod__instructions-label">
+                  <article class="tag tag--special-instructions">
+                    <p class="tag__name"></p>
+                  </article>
+                </div>
+                <ul class="guide__text-list">
+                  <li class="guide__text-list-item">
+                    <p class="guide__text">
+                      Вручную распакуйте мод и поместите в основной каталог
+                      Skyrim Special Edition.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="guide__section" id="section5">
+          <div class="containder">
+            <div class="guide__block-title">
+              <h2 class="guide__title">Инструменты для моддинга</h2>
+              <p class="guide__description">
+                Как сделать Skyrim великим: одно изменение за раз
+              </p>
+            </div>
+
+            <div class="guide__block-text">
+              <p class="guide__text">
+                Настоятельно рекомендуется создать папку для всех ваших
+                инструментов для моддинга, в идеале в корне диска, например,
+                C:\Modding Tools, или папку MO2, например, MO2\Tools. Так как я
+                играю не только в скайрим, у меня всё выглядит так.
+                C:\Modding\Skyrim\[А тут папки всех программ].
+              </p>
+              <p class="guide__text">
+                Инструменты должны быть извлечены из своих архивов (например, не
+                могут оставаться в файле .7z) и должны иметь свои собственные
+                индивидуальные папки. Инструменты не должны находиться в папке
+                Steam и ее подпапках, и они
+                <span class="text-highlight"
+                  >НЕ ДОЛЖНЫ устанавливаться в области, защищенной UAC,
+                  например, на рабочем столе, в Program Files</span
+                >.
+              </p>
+
+              <article class="mod">
+                <div class="mod__tags">
+                  <article class="tag tag--tool">
+                    <p class="tag__name"></p>
+                  </article>
+                  <article class="tag tag--special-instructions">
+                    <p class="tag__name"></p>
+                  </article>
+                </div>
+                <div class="mod__title-container">
+                  <div class="mod__title-wrapper">
+                    <h3 class="mod__title">LOOT</h3>
+                    <div class="mod__badges">
+                      <a
+                        class="mod__link"
+                        href="https://www.nexusmods.com/site/mods/439?"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src="https://img.shields.io/badge/%D0%A1%D1%81%D1%8B%D0%BB%D0%BA%D0%B0-%D0%A1%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-%D1%87%D1%82%D0%BE%D1%82%D0%BE"
+                          alt="Ссылка на страницу мода"
+                        />
+                      </a>
+                      <img
+                        src="https://img.shields.io/badge/%D0%92%D0%B5%D1%80%D1%81%D0%B8%D1%8F-0.24.1-%D1%87%D1%82%D0%BE%D1%82%D0%BE?color=%232483c3"
+                        alt="Версия мода"
+                      />
+                      <img
+                        src="https://img.shields.io/badge/%D0%90%D0%B2%D1%82%D0%BE%D1%80-LOOT team-%D1%87%D1%82%D0%BE%D1%82%D0%BE?color=%232483c3"
+                        alt="Автор мода"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="mod__divider" />
+
+                <p class="mod__description">
+                  LOOT — это утилита для оптимизации порядка загрузки, которая
+                  критически важна для любого модифицированного запуска Skyrim,
+                  особенно с таким длинным списком, как у нас.
+                </p>
+
+                <fieldset class="mod__files">
+                  <legend class="mod__files-label"></legend>
+                  <p class="mod__file">
+                    <span class="mod__file-type mod__file-type--main"></span
+                    >LOOT v0.24.1 - Installer (64-Bit)<span
+                      class="mod__file-version"
+                      ><span class="mod__file-version-number"
+                        >0.24.1</span
+                      ></span
+                    >
+                  </p>
+                </fieldset>
+
+                <div class="mod__instructions">
+                  <div class="mod__instructions-label">
+                    <article class="tag tag--special-instructions">
+                      <p class="tag__name"></p>
+                    </article>
+                  </div>
+                  <ol class="guide__text-list guide__text-list--numbered">
+                    <li class="guide__text-list-item">
+                      <p class="guide__text">
+                        При первой загрузке у LOOT не будет данных мастер-листа
+                        или групп модов по умолчанию. (Цветной текст указывает
+                        на цвет узла (по умолчанию)).
+                      </p>
+                      <ol class="guide__text-list guide__text-list--numbered">
+                        <li class="guide__text-list-item">
+                          <p class="guide__text">
+                            Выключите Mod Organizer 2, если он открыт. (Если вы
+                            следуете руководству впервые, MO2 еще даже не
+                            установлен.)
+                          </p>
+                        </li>
+                        <li class="guide__text-list-item">
+                          <p class="guide__text">
+                            Запустите LOOT из установленного места.
+                          </p>
+                        </li>
+                        <li class="guide__text-list-item">
+                          <p class="guide__text">
+                            После загрузки LOOT отсортируйте порядок загрузки,
+                            нажав на иконку с надписью «Сортировать плагины»
+                            (она имеет три строки друг над другом). Это в
+                            верхнем левом углу.
+                          </p>
+                        </li>
+                      </ol>
+                    </li>
+                    <li class="guide__text-list-item">
+                      <p class="guide__text">
+                        Если вы ранее установили LOOT, вам необходимо очистить
+                        все старые пользовательские правила, которые вы могли
+                        добавить:
+                      </p>
+                      <ol class="guide__text-list guide__text-list--numbered">
+                        <li class="guide__text-list-item">
+                          <p class="guide__text">
+                            Найдите и нажмите «Игра» в верхнем меню, затем
+                            выберите «Очистить все метаданные пользователя...»,
+                            затем нажмите «Да». Это гарантирует, что у вас будет
+                            четкий набор правил.
+                          </p>
+                        </li>
+                      </ol>
+                    </li>
+                    <li class="guide__text-list-item">
+                      <p class="guide__text">
+                        Руководство требует добавления новых групп модов LOOT
+                        для правильной сортировки порядка загрузки:
+                      </p>
+                      <ol class="guide__text-list guide__text-list--numbered">
+                        <li class="guide__text-list-item">
+                          <p class="guide__text">
+                            Запустите LOOT (если он все еще не загружен с
+                            последнего шага. Если вы закрыли его, вы можете
+                            загрузить его через MO2 на этом этапе, если хотите.)
+                          </p>
+                        </li>
+                        <li class="guide__text-list-item">
+                          <p class="guide__text">
+                            В верхнем меню найдите и нажмите
+                            <span class="text-highlight">«Игра»</span>.
+                          </p>
+                        </li>
+                        <li class="guide__text-list-item">
+                          <p class="guide__text">
+                            Нажмите кнопку
+                            <span class="text-highlight"
+                              >Редактировать группы</span
+                            >.
+                          </p>
+                        </li>
+                        <li class="guide__text-list-item">
+                          <p class="guide__text">
+                            В поле «Название группы» введите
+                            <span class="text-highlight">Village Mods</span>,
+                            затем нажмите кнопку
+                            <span class="text-highlight"
+                              >«Добавить новую группу»</span
+                            >.
+                          </p>
+                        </li>
+                        <li class="guide__text-list-item">
+                          <p class="guide__text">
+                            Щелкните левой кнопкой мыши узел(кружочек)
+                            <span class="text-highlight">Alternate Start</span>,
+                            чтобы выбрать его.
+                          </p>
+                        </li>
+                        <li class="guide__text-list-item">
+                          <p class="guide__text">
+                            Дважды щелкните и удерживайте, перетаскивая линию от
+                            <span class="text-highlight">Alternate Start</span>
+                            к узлу
+                            <span class="text-highlight">Village Mods</span>,
+                            который вы создали.
+                            <span class="text-highlight">Village Mods</span>
+                            должны стать зелеными.
+                          </p>
+                        </li>
+                        <li class="guide__text-list-item">
+                          <p class="guide__text">
+                            Создайте новую группу под названием
+                            <span class="text-highlight"
+                              >Trivial Smelters of Skyrim</span
+                            >.
+                          </p>
+                        </li>
+                        <li class="guide__text-list-item">
+                          <p class="guide__text">
+                            Подключите
+                            <span class="text-highlight">Village Mods</span> к
+                            созданному вами узлу
+                            <span class="text-highlight"
+                              >Trivial Smelters of Skyrim</span
+                            >.
+                            <span class="text-highlight"
+                              >Trivial Smelters of Skyrim</span
+                            >
+                            должны стать зелеными.
+                          </p>
+                        </li>
+                        <li class="guide__text-list-item">
+                          <p class="guide__text">
+                            Подключите
+                            <span class="text-highlight"
+                              >Trivial Smelters of Skyrim</span
+                            >
+                            к
+                            <span class="text-highlight"
+                              >Follower Frameworks</span
+                            >.
+                            <span class="text-highlight"
+                              >Trivial Smelters of Skyrim</span
+                            >
+                            должны стать черными.
+                          </p>
+                        </li>
+                        <li class="guide__text-list-item">
+                          <p class="guide__text">
+                            Создаqnt новую группу с именем <span class="text-highlight">CCOR Patches</span>.
+                          </p>
+                        </li>
+                      </ol>
+                    </li>
+                  </ol>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="guide__section" id="section6">
+          <div class="containder">
+            <div class="guide__block-title">
+              <h2 class="guide__title">Конвертация старых плагинов</h2>
+              <p class="guide__description">Работа со «старыми, но хорошими»</p>
+            </div>
+
+            <div class="guide__block-text">
+              <p class="guide__text">
+                В оригинальной версии Skyrim (Skyrim: LE) использовалась немного
+                другая версия файлов плагина, чем в Skyrim: SE (Form 43 vs. Form
+                44). Поскольку в руководстве используется ряд модов, которые
+                изначально были разработаны и выпущены для Skyrim: LE, плагины
+                будут в этой старой форме. Хотя эти файлы обычно не вызывают
+                проблем, это очень простой процесс, чтобы конвертировать старый
+                формат в более новый и убедиться в этом.
+              </p>
+              <p class="guide__text">
+                Для выполнения этого преобразования мы будем использовать
+                Creation Kit. Все моды, требующие этого преобразования, будут
+                иметь тег Creatin Kit Resave.
+              </p>
+              <p class="guide__text text-highlight text-underline">
+                1. Конвертируем плагин с помощью Creation Kit
+              </p>
+
+              <ol class="guide__text-list guide__text-list--numbered">
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Убедитесь, что папка Overwrite пуста. Он всегда будет указан
+                    последним на левой панели MO2. Если какие-либо файлы
+                    присутствуют, их можно удалить.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    В раскрывающемся меню «Исполняемый файл» MO2 выберите и
+                    запустите Creation Kit.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    После загрузки откройте меню
+                    <span class="text-highlight">«Файл»</span> и выберите
+                    <span class="text-highlight">«Данные...»</span>
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Найдите файл плагина, который нужно конвертировать, и
+                    выберите
+                    <span class="text-highlight"
+                      >«Установить как активный файл»</span
+                    >.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Нажмите OK и дождитесь завершения загрузки Creation Kit.
+                  </p>
+                  <ul class="guide__text-list">
+                    <li class="guide__text-list-item">
+                      <p class="guide__text">
+                        В окне в фоновом режиме будут отображаться
+                        многочисленные ошибки. Это нормально и их можно
+                        игнорировать. Они никак не повлияют на этот процесс.
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    После завершения процесса загрузки выберите
+                    <span class="text-highlight">«Файл»</span>, а затем
+                    <span class="text-highlight">«Сохранить»</span>.
+                  </p>
+                  <ul class="guide__text-list">
+                    <li class="guide__text-list-item">
+                      <p class="guide__text">
+                        Вы правильно прочитали. Как только он загрузится,
+                        СОХРАНИТЕ ЕГО. Это буквально все, что нам нужно сделать
+                        для конвертации плагина.
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">Закройте набор для создания.</p>
+                </li>
+              </ol>
+              <p class="guide__text">
+                Обновленная версия плагина должна была перезаписывать старую
+                версию. Для преобразования не требуется никаких дополнительных
+                действий. Были редкие сообщения о том, что процесс не сработал,
+                но проверить процесс конвертации можно с помощью:
+              </p>
+              <p class="guide__text text-highlight text-underline">
+                2. Проверка плагина с помощью SSEEdit
+              </p>
+
+              <ol class="guide__text-list guide__text-list--numbered">
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    В раскрывающемся меню «Исполняемый файл» MO2 выберите и
+                    запустите xEdit.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Когда начальная загрузка будет завершена,
+                    <span class="text-highlight"
+                      >щелкните правой кнопкой мыши</span
+                    >
+                    в окне со списком плагинов и выберите
+                    <span class="text-highlight">«Выбрать нет»</span>.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Найдите преобразованный плагин в списке и
+                    <span class="text-highlight">ДВАЖДЫ КЛИКНИТЕ</span> по нему.
+                    xEdit должен начать загрузку снова. Найдите сообщение
+                    "Background Loader: finished", указывающее на завершение
+                    загрузки.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Убедитесь, что последний плагин на левой панели — это тот,
+                    который вы проверяете.
+                    <span class="text-highlight"
+                      >ЩЕЛКНИТЕ ПРАВОЙ КНОПКОЙ МЫШИ</span
+                    >
+                    этот плагин и выберите
+                    <span class="text-highlight"
+                      >«Проверить на наличие ошибок»</span
+                    >.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Должно появиться сообщение «Все готово!». Это говорит о
+                    чистом плагине, который будет работать.
+                  </p>
+                  <ul class="guide__text-list">
+                    <li class="guide__text-list-item">
+                      <p class="guide__text">
+                        Если об ошибках сообщается, вам нужно будет либо
+                        исправить их, либо попробовать конвертацию плагина
+                        второй раз, прежде чем переходить к следующему шагу.
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    <span class="text-highlight"
+                      >ЩЕЛКНИТЕ ПРАВОЙ КНОПКОЙ МЫШИ</span
+                    >
+                    ПО ПЛАГИНУ еще раз и выберите
+                    <span class="text-highlight">«Сортировать мастера»</span>.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Выйдите из xEDIT. Обязательно сохраните измененный плагин.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Запустите плагин через xEdit Quick Auto Clean.
+                  </p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <section class="guide__section" id="section7">
+          <div class="containder">
+            <div class="guide__block-title">
+              <h2 class="guide__title">Cathedral Assets Optimizer</h2>
+              <p class="guide__description">Как правильно доить САО</p>
+            </div>
+
+            <div class="guide__block-text">
+              <p class="guide__text">
+                Последняя общая задача, которая появится в руководстве для
+                работы, — это запуск мода через Cathedral Asset Optimizer (CAO).
+                Как упоминалось в разделе «Конвертация плагинов», некоторые из
+                модов, которые мы используем, взяты из Skyrim: LE, а сетки и
+                текстуры, которые с ними связаны, не всегда хорошо сочетаются со
+                Skyrim: SE. Чтобы ваша игровая система не взорвалась, было
+                создано несколько различных профилей:
+              </p>
+
+              <ul class="guide__text-list">
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Lexy's LOTD SE - BSA: Оптимизирует сетки и текстуры, а затем
+                    упаковывает их в BSA.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Lexy's LOTD SE - No BSA: Оптимизирует сетки и текстуры, но
+                    оставляет их в виде свободных файлов.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Lexy's LOTD SE - WICO: Специально настроен для оптимизации
+                    сеток и текстур для WICO - Windsong Immersive Character
+                    Overhaul, следуя специальным инструкциям руководства для
+                    него.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    SSE - Downsize Textures - 2K: Уменьшает любую текстуру,
+                    размер которой превышает 2048 x 2048, до 2K. Если вы
+                    попытаетесь сохранить немного видеопамяти, не стесняйтесь
+                    использовать этот профиль для уменьшения некоторых текстур
+                    там, где вы считаете это целесообразным.
+                  </p>
+                </li>
+              </ul>
+              <p class="guide__text">
+                Моды, требующие такой обработки, будут иметь тег CAO вместе с
+                тем, какой профиль вам следует использовать.
+              </p>
+
+              <ol class="guide__text-list guide__text-list--numbered">
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    ЗАКРОЙТЕ MO2. CAO предназначен для работы ВНЕ Mod Organizer.
+                    Не стоит его минимизировать; ЗАКРОЙТЕ ЕГО.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Запустите CAO из исполняемого файла в папке установки.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Посмотрите на мод Особые указания. В нем будет указан тип
+                    профиля для использования в CAO. Убедитесь, что вы
+                    используете правильный профиль.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Нажмите на кнопку
+                    <span class="text-highlight">«Открыть каталог»</span>.
+                    Перейдите в папку с модом, который требует конвертации.
+                    Выберите эту папку.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Нажмите на кнопку
+                    <span class="text-highlight">«Журнал»</span>. Это покажет
+                    вам, что будет обрабатывать CAO.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    <span class="text-highlight"
+                      >Нажмите кнопку Выполнить.</span
+                    >
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Когда CAO завершит свой прогон, закройте программу.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Повторите шаги 2 - 7 для всех загруженных файлов для этого
+                    мода (основных, необязательных и прочих).
+                  </p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <section class="guide__section" id="section8">
+          <div class="containder">
+            <div class="guide__block-title">
+              <h2 class="guide__title">Mod Organizer 2 Removal Tool</h2>
+              <p class="guide__description">Вынос мусора</p>
+            </div>
+
+            <div class="guide__block-text">
+              <p class="guide__text">
+                Последняя общая задача, которая появится в Руководстве для
+                работы, — это запуск мода через Mod Organizer Removal Tool.
+                Инструмент упрощает удаление файлов из модов.
+              </p>
+              <p class="guide__text">
+                Моды, требующие такой обработки, будут иметь соответствующий
+                тег.
+              </p>
+
+              <ol class="guide__text-list guide__text-list--numbered">
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Выберите опцию "MO2 Removal Tool" в меню инструментов на
+                    панели инструментов MO2 (значок головоломки).
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Посмотрите на мод Особые указания. В нем будут перечислены
+                    все файлы, которые необходимо удалить.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Введите название мода, из которого вы хотите удалить
+                    файлы/папки (последний мод в вашем списке модов выбран по
+                    умолчанию).
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Скопируйте и вставьте контуры в поле под селектором мода.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Нажмите кнопку Выполнить. Откроется еще одно диалоговое
+                    окно.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Просмотрите файлы, которые будут удалены. Все пути с
+                    подстановочными знаками будут развернуты, чтобы показать,
+                    какие файлы были выбраны.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    Нажмите «Удалить все», чтобы завершить удаление. Обратите
+                    внимание, что вы также можете инвертировать выбор, чтобы
+                    удалить все, КРОМЕ того, что вы изначально ввели. ЭТО
+                    ЭКСПЕРИМЕНТАЛЬНО. Помните, что вы НЕ МОЖЕТЕ отменить
+                    удаление из этого инструмента, я лично рекомендую
+                    использовать опцию "mohidden" при использовании этой
+                    функции.
+                  </p>
+                </li>
+                <li class="guide__text-list-item">
+                  <p class="guide__text">
+                    В корневой папке мода будет создан файл для регистрации
+                    сделанных вами удалений. Файл будет называться {modName}.
+                    {'delete'|'mohidden'}.log
+                  </p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <nav class="guide__navigation-buttons">
+          <a
+            href="./common-instructions.html"
+            class="guide__navigation-button navigation-button--previous navigation-button"
+            ><p class="navigation-button__description">Предыдущая страница</p>
+            <h3 class="navigation-button__title">Общие инструкции</h3></a
+          >
+          <a
+            href="./mod-installation-part-1.html.html"
+            class="guide__navigation-button navigation-button--next navigation-button"
+            ><p class="navigation-button__description">Следующая страница</p>
+            <h3 class="navigation-button__title">
+              Установка модов - Часть 1
+            </h3></a
+          >
+        </nav>
+      </main>
+
+      <aside class="aside-navigation">
+        <aside class="aside-navigation__container">
+          <nav class="aside-navigation__menu">
+            <ul class="aside-navigation__menu-list">
+              <li
+                class="aside-navigation__menu-item aside-navigation__menu-item--description"
+              >
+                На этой странице
+              </li>
+              <li class="aside-navigation__menu-item" data-section="section1">
+                <a href="#section1">Некоторые напоминания</a>
+              </li>
+              <li class="aside-navigation__menu-item" data-section="section2">
+                <a href="#section2">Расширения файлов Windows</a>
+              </li>
+              <li class="aside-navigation__menu-item" data-section="section3">
+                <a href="#section3">Главные утилиты</a>
+              </li>
+              <li class="aside-navigation__menu-item" data-section="section4">
+                <a href="#section4">Официальный контент Bethesda</a>
+              </li>
+              <li class="aside-navigation__menu-item" data-section="section5">
+                <a href="#section5">Инструменты для моддинга</a>
+              </li>
+              <li class="aside-navigation__menu-item" data-section="section6">
+                <a href="#section6">Конвертация старых плагинов</a>
+              </li>
+              <li class="aside-navigation__menu-item" data-section="section7">
+                <a href="#section7">Cathedral Assets Optimizer</a>
+              </li>
+              <li class="aside-navigation__menu-item" data-section="section8">
+                <a href="#section8">Mod Organizer 2 Removal Tool</a>
+              </li>
+              <div class="aside-navigation__indicator"></div>
+            </ul>
+          </nav>
+        </aside>
+      </aside>
+    </div>
+  </body>
+</html>

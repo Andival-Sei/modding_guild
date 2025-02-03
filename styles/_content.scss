@@ -148,6 +148,10 @@
         margin-inline-start: 20px;
       }
     }
+
+		&--margine-top {
+			margin-block-start: 50px;
+		}
   }
 
   &__navigation-buttons {
@@ -176,6 +180,22 @@
     text-decoration: underline;
     text-underline-offset: 5px;
   }
+
+	&-link {
+
+		cursor: pointer;
+		&:hover {
+			color: v.$color_text_link-hover;
+			transition: color 0.3s ease;
+		}
+	}
+
+	&-path {
+		color: v.$color_aside;
+		background-color: v.$color_text_path-background;
+		border-radius: 3px;
+	}
+	
 }
 
 .message-block {

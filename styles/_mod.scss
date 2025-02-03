@@ -1,0 +1,99 @@
+@use "variables" as v;
+
+.mod {
+  background-color: v.$color_mod;
+  border-radius: 10px;
+  margin-block-start: 80px;
+  padding: 50px 30px 30px;
+  position: relative;
+
+  &__tags {
+    position: absolute;
+    inset-block-start: 10px;
+    inset-inline-end: 30px;
+  }
+
+  &__title-container {
+    display: flex;
+    justify-content: space-between;
+    margin-block-end: 16px;
+  }
+  &__title-wrapper {
+  }
+  &__title {
+    font-size: 25px;
+  }
+  &__badges {
+    margin-block-start: 20px;
+  }
+  &__link {
+  }
+  &__subtitle-wrapper {
+    text-align: end;
+  }
+  &__subtitle {
+  }
+
+  &__divider {
+    margin-block-end: 16px;
+  }
+  &__description {
+    line-height: 1.5;
+    &:not(:first-child) {
+      margin-block-start: 1em;
+    }
+  }
+  &__files {
+    margin-block-start: 20px;
+    position: relative;
+    padding: 40px 30px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: v.$color_files;
+  }
+  &__files-label {
+    position: absolute;
+    inset-block-start: 5px;
+    inset-inline-start: 5px;
+    color: v.$color_description;
+  }
+
+  &__file {
+    line-height: 1.6;
+  }
+  &__file-type {
+    &::after {
+      content: " — ";
+      color: v.$color_description;
+      margin: 0 10px;
+    }
+  }
+  &__file-type--main {
+    color: v.$colod_file-type_main;
+  }
+  &__file-version {
+    color: v.$color_description;
+    &::before {
+      content: " — ";
+      color: v.$color_description;
+      margin: 0 10px;
+    }
+
+    &-number {
+      color: #fff;
+    }
+  }
+
+	&__instructions {
+		padding: 50px 10px 10px 10px;
+		position: relative;
+		background-color: #36353b;
+		border-radius: 10px;
+		margin-top: 20px;
+		&-label {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+		}
+	}
+}
