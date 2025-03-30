@@ -108,8 +108,8 @@
     &__menu {
       position: absolute;
       // inset: 10vh 10vw 0 auto;
-      top: 10vh;
-      right: 5vh;
+      inset-block-start: 10vh;
+      inset-inline-end: 5vh;
       opacity: 0;
       transform: translateX(-100%);
       transition:
