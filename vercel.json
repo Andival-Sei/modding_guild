@@ -1,0 +1,11 @@
+{
+  "rewrites": [
+    {
+      "source": "/src/:path*",
+      "destination": "/src/:path*"
+    }
+  ],
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite"
+}

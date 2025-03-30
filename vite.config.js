@@ -5,7 +5,13 @@ export default defineConfig({
   publicDir: 'public',
   build: {
     outDir: 'dist',
-    assetsDir: 'assets'
+    assetsDir: 'assets',
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        introduction: 'src/pages/introduction.html'
+      }
+    }
   },
   css: {
     postcss: {
