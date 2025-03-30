@@ -5,8 +5,8 @@
   grid-template-columns: 2fr 4fr minmax(50px, 2fr);
   grid-template-rows: auto 1fr;
   grid-template-areas:
-    "aside-links header header"
-    "aside-links main aside-navigation";
+    'aside-links header header'
+    'aside-links main aside-navigation';
 }
 
 .aside-links {
@@ -31,8 +31,8 @@
   .grid-container {
     grid-template-columns: 2fr 6fr;
     grid-template-areas:
-      "aside-links header"
-      "aside-links main";
+      'aside-links header'
+      'aside-links main';
   }
 }
 
@@ -40,8 +40,8 @@
   .grid-container {
     grid-template-columns: 1fr;
     grid-template-areas:
-      "header"
-      "main";
+      'header'
+      'main';
   }
 }
 
@@ -50,11 +50,11 @@
     grid-template-columns: 1fr; // Одна колонка на маленьких экранах
     grid-template-rows: auto auto 1fr auto auto;
     grid-template-areas:
-      "header"
-      "aside-links"
-      "main"
-      "aside-navigation"
-      "footer";
+      'header'
+      'aside-links'
+      'main'
+      'aside-navigation'
+      'footer';
   }
 
   .aside-links,

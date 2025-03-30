@@ -1,4 +1,4 @@
-@use "variables" as v;
+@use 'variables' as v;
 
 .mod {
   background-color: v.$color_mod;
@@ -63,7 +63,7 @@
   }
   &__file-type {
     &::after {
-      content: " — ";
+      content: ' — ';
       color: v.$color_description;
       margin: 0 10px;
     }
@@ -74,7 +74,7 @@
   &__file-version {
     color: v.$color_description;
     &::before {
-      content: " — ";
+      content: ' — ';
       color: v.$color_description;
       margin: 0 10px;
     }
@@ -84,16 +84,16 @@
     }
   }
 
-	&__instructions {
-		padding: 50px 10px 10px 10px;
-		position: relative;
-		background-color: #36353b;
-		border-radius: 10px;
-		margin-top: 20px;
-		&-label {
-			position: absolute;
-			top: 10px;
-			left: 10px;
-		}
-	}
+  &__instructions {
+    padding: 50px 10px 10px 10px;
+    position: relative;
+    background-color: #36353b;
+    border-radius: 10px;
+    margin-top: 20px;
+    &-label {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+  }
 }
