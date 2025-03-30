@@ -22,6 +22,7 @@
   "homepage": "https://github.com/Andival-Sei/modding_guild#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.21",
+    "postcss-combine-media-query": "^1.0.1",
     "sass": "^1.83.4",
     "vite": "^6.2.3"
   }
