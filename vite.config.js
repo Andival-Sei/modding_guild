@@ -1,4 +1,13 @@
 import { defineConfig } from 'vite'
+import { glob } from 'glob'
+import path from 'path'
+
+// Автоматически находим все HTML файлы в директории pages
+const pages = glob.sync('src/pages/*.html').reduce((acc, file) => {
+  const name = path.basename(file, '.html')
+  acc[name] = file
+  return acc
+}, {})
 
 export default defineConfig({
   root: '.',
@@ -10,7 +19,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: 'index.html',
-        introduction: 'src/pages/introduction.html'
+        ...pages
       }
     }
   },
