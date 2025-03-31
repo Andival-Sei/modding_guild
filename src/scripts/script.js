@@ -5,11 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuItems = document.querySelectorAll('.aside-navigation__menu-item');
   const indicator = document.querySelector('.aside-navigation__indicator');
 
-  burger.addEventListener('click', () => {
-    burger.classList.toggle('active');
-    headerMenu.classList.toggle('active');
-  });
-
   // Функция для обновления позиции индикатора
   const updateIndicatorPosition = (activeItem) => {
     if (activeItem && indicator) {
@@ -235,6 +230,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Вызываем функцию при загрузке страницы
+  // Функция для инициализации бургер-меню
+  function initBurgerMenu() {
+    const burger = document.querySelector('.header__burger');
+    const menu = document.querySelector('.header__menu');
+    
+    if (burger && menu) {
+      burger.addEventListener('click', () => {
+        burger.classList.toggle('active');
+        menu.classList.toggle('active');
+      });
+    }
+  }
+
+  // Вызываем функции при загрузке страницы
   addMainPageClasses();
+  initBurgerMenu();
 });
