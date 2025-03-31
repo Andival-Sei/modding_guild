@@ -1,8 +1,12 @@
 {
-  "rewrites": [
+  "routes": [
     {
-      "source": "/src/:path*",
-      "destination": "/src/:path*"
+      "src": "/src/pages/(.*)",
+      "dest": "/src/pages/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
     }
   ],
   "buildCommand": "npm run build",
