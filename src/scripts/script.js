@@ -222,4 +222,19 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
   });
+
+  // Функция для добавления классов header на главной странице
+  function addMainPageClasses() {
+    const header = document.querySelector('.header');
+    const headerContainer = document.querySelector('.header__container');
+    
+    // Проверяем, находимся ли мы на главной странице
+    if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+      header.classList.add('header--main-page');
+      headerContainer.classList.add('header__container--main-page');
+    }
+  }
+
+  // Вызываем функцию при загрузке страницы
+  addMainPageClasses();
 });

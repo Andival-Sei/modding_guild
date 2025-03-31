@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import { glob } from 'glob'
 import path from 'path'
+import includeHTML from 'vite-plugin-include-html'
 
 // Автоматически находим все HTML файлы в директории pages
 const pages = glob.sync('src/pages/*.html').reduce((acc, file) => {
@@ -13,6 +14,11 @@ export default defineConfig({
   root: '.',
   publicDir: 'public',
   base: '/',
+  plugins: [
+    includeHTML({
+      include: ['src/components/**/*.html']
+    })
+  ],
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
